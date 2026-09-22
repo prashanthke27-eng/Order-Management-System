@@ -8,7 +8,6 @@ RUN npm ci --omit=dev
 
 # Application files
 COPY server.js index.html seed-data.json ./
-COPY "Final Web App .xlsx" ./
 
 ENV NODE_ENV=production
 ENV DB_PATH=/data/erp.db
