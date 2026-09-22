@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: coffee-erp-order-tracker
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    disk:
+      name: erp-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_PATH
+        value: /data/erp.db
+      - key: JWT_SECRET
+        generateValue: true
+      # PORT is provided automatically by Render - do not set it here.

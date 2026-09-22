@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee ERP — Order Management</title>
+<style>
+:root { --bg:#f4f1ea; --card:#fff; --ink:#2b2118; --accent:#6f4e2e; --accent2:#a67c4e; --ok:#2e7d32; --warn:#b26a00; --bad:#c62828; --line:#e5ddd0; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Segoe UI, Roboto, Arial, sans-serif; background:var(--bg); color:var(--ink); }
+.hidden { display:none !important; }
+.login-wrap { display:flex; align-items:center; justify-content:center; height:100vh; }
+.login-card { background:var(--card); padding:28px; border-radius:12px; box-shadow:0 6px 24px rgba(0,0,0,.12); width:340px; }
+.login-card label { display:block; margin:10px 0; font-size:14px; }
+.login-card input { width:100%; padding:9px; margin-top:4px; border:1px solid var(--line); border-radius:6px; }
+button { cursor:pointer; }
+button.primary, .btn-primary { background:var(--accent); color:#fff; border:0; padding:9px 16px; border-radius:6px; font-size:14px; }
+button.primary:hover { background:#5a3d23; }
+button.ghost { background:#fff; border:1px solid var(--line); padding:7px 12px; border-radius:6px; }
+button.danger { background:var(--bad); color:#fff; border:0; padding:7px 12px; border-radius:6px; }
+button.small { padding:4px 10px; font-size:12px; }
+.topbar { display:flex; align-items:center; gap:16px; background:#2b2118; color:#fff; padding:10px 16px; position:sticky; top:0; z-index:10; flex-wrap:wrap; }
+.brand { font-weight:700; font-size:18px; }
+#nav { display:flex; gap:6px; flex-wrap:wrap; }
+#nav button { background:transparent; color:#e8dcc8; border:1px solid transparent; padding:7px 10px; border-radius:6px; font-size:13px; }
+#nav button.active, #nav button:hover { background:#4a3520; border-color:#6f4e2e; color:#fff; }
+.userbox { margin-left:auto; display:flex; gap:8px; align-items:center; font-size:13px; }
+.userbox button { background:#4a3520; color:#fff; border:0; padding:6px 10px; border-radius:6px; }
+main { padding:18px; max-width:1280px; margin:0 auto; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px; margin-bottom:16px; }
+.card h2 { margin:0 0 12px; font-size:18px; }
+.kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px; }
+.kpi { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px; }
+.kpi .n { font-size:24px; font-weight:700; }
+.kpi .l { font-size:12px; color:#7a6a55; }
+table.grid { width:100%; border-collapse:collapse; font-size:13px; }
+table.grid th, table.grid td { border:1px solid var(--line); padding:6px 8px; text-align:left; }
+table.grid th { background:#efe7d8; position:sticky; top:0; }
+.toolbar { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; align-items:center; }
+.toolbar input, .toolbar select { padding:7px; border:1px solid var(--line); border-radius:6px; }
+.badge { display:inline-block; padding:2px 8px; border-radius:10px; font-size:11px; font-weight:600; }
+.b-advance { background:#fff3e0; color:var(--warn); border:1px solid #ffcc80; }
+.b-credit { background:#e8f5e9; color:var(--ok); border:1px solid #a5d6a7; }
+.b-wait { background:#fce4ec; color:var(--bad); }
+.b-ready { background:#e8f5e9; color:var(--ok); }
+.ac-wrap { position:relative; }
+.ac-list { position:absolute; top:100%; left:0; right:0; background:#fff; border:1px solid var(--line); border-radius:8px; max-height:220px; overflow-y:auto; z-index:200; margin:2px 0 0; padding:0; list-style:none; box-shadow:0 8px 24px rgba(0,0,0,.18); }
+.ac-list li { padding:8px 10px; cursor:pointer; font-size:13px; }
+.ac-list li small { color:#7a6a55; }
+.ac-list li.active, .ac-list li:hover { background:#f3ecdf; }
+.form-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:10px; }
+.form-grid label { display:block; font-size:13px; }
+.form-grid input, .form-grid select, .form-grid textarea { width:100%; padding:8px; margin-top:4px; border:1px solid var(--line); border-radius:6px; }
+.err { color:var(--bad); font-size:13px; min-height:18px; }
+.muted { color:#7a6a55; } .small { font-size:12px; }
+.toast { position:fixed; bottom:20px; right:20px; background:#2b2118; color:#fff; padding:12px 18px; border-radius:8px; z-index:50; }
+.modal { position:fixed; inset:0; background:rgba(0,0,0,.45); display:flex; align-items:center; justify-content:center; z-index:40; }
+.modal-card { background:#fff; border-radius:12px; padding:20px; width:min(720px,94vw); max-height:88vh; overflow:auto; }
+.pager { display:flex; gap:8px; align-items:center; margin-top:10px; font-size:13px; }
+
+</style>
+</head>
+<body>
+<div id="login-view" class="login-wrap">
+  <div class="login-card">
+    <h1>☕ Coffee ERP</h1>
+    <p class="muted">Order Management — sign in to continue</p>
+    <label>Username<input id="login-user" autocomplete="username" placeholder="Username"></label>
+    <label>Password<input id="login-pass" type="password" autocomplete="current-password" placeholder="Password"></label>
+    <div id="login-err" class="err"></div>
+    <button id="login-btn" class="primary">Sign in</button>
+  </div>
+</div>
+
+<div id="app" class="hidden">
+  <header class="topbar">
+    <div class="brand">☕ Coffee ERP</div>
+    <nav id="nav">
+      <button data-view="dashboard">Dashboard</button>
+      <button data-view="tracker">Order Tracker</button>
+      <button data-view="billing">Today's Billing</button>
+      <button data-view="pending">Pending Delivery</button>
+      <button data-view="delivered">Delivered Orders</button>
+      <button data-view="customers">Customer/Ledger</button>
+      <button data-view="products">Product Summary</button>
+      <button data-view="reports">Reports</button>
+      <button data-view="holidays">Holiday Master</button>
+      <button data-view="settings">Settings</button>
+    </nav>
+    <div class="userbox"><span id="user-label"></span><button id="logout-btn">Logout</button></div>
+  </header>
+  <main id="view"></main>
+  <div id="toast" class="toast hidden"></div>
+</div>
+
+<div id="modal" class="modal hidden"><div class="modal-card"><div id="modal-body"></div></div></div>
+
+<script>
+// Coffee ERP frontend — vanilla SPA, server is the authority for all workflow rules.
+const api = {
+  token: localStorage.getItem('erp_token') || '',
+  user: JSON.parse(localStorage.getItem('erp_user') || 'null'),
+  async call(method, path, body) {
+    const r = await fetch('/api' + path, {
+      method,
+      headers: { 'Content-Type': 'application/json', ...(this.token ? { Authorization: 'Bearer ' + this.token } : {}) },
+      body: body !== undefined ? JSON.stringify(body) : undefined,
+    });
+    const j = await r.json().catch(() => ({ success: false, message: 'Bad server response' }));
+    if (r.status === 401) { logout(); throw new Error('Session expired'); }
+    if (!j.success) throw new Error(j.message || 'Request failed');
+    return j;
+  },
+  get: (p) => api.call('GET', p),
+  post: (p, b) => api.call('POST', p, b),
+  put: (p, b) => api.call('PUT', p, b),
+  del: (p) => api.call('DELETE', p),
+};
+
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s === null || s === undefined ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+let currentView = 'dashboard';
+let state = { customers: [], products: [] };
+
+function toast(msg) {
+  const t = $('#toast');
+  t.textContent = msg; t.classList.remove('hidden');
+  setTimeout(() => t.classList.add('hidden'), 3200);
+}
+function logout() {
+  localStorage.removeItem('erp_token'); localStorage.removeItem('erp_user');
+  location.reload();
+}
+// ---------- diagnostics: catch, log to server, keep UI alive ----------
+let _diagLast = 0;
+async function diagnose(source, message, context) {
+  const now = Date.now();
+  if (now - _diagLast < 2000) return; // throttle bursts
+  _diagLast = now;
+  try {
+    await api.call('POST', '/reports/diagnose', { source, message: String(message || '').slice(0, 2000), context: String(context || '').slice(0, 4000), url: location.href });
+  } catch {}
+}
+window.addEventListener('error', (e) => diagnose('window-error', e.message, e.filename + ':' + e.lineno));
+window.addEventListener('unhandledrejection', (e) => diagnose('unhandled-rejection', (e.reason && e.reason.message) || String(e.reason), ''));
+function openModal(html) { $('#modal-body').innerHTML = html; $('#modal').classList.remove('hidden'); }
+function closeModal() { $('#modal').classList.add('hidden'); }
+$('#modal').addEventListener('click', (e) => { if (e.target.id === 'modal') closeModal(); });
+
+// ---------- auth ----------
+async function doLogin() {
+  const username = $('#login-user').value.trim(), password = $('#login-pass').value;
+  try {
+    const j = await api.call('POST', '/auth/login', { username, password });
+    api.token = j.data[0].token; api.user = { username: j.data[0].username, role: j.data[0].role };
+    localStorage.setItem('erp_token', api.token); localStorage.setItem('erp_user', JSON.stringify(api.user));
+    boot();
+  } catch (e) { $('#login-err').textContent = e.message; }
+}
+
+// ---------- shell ----------
+function boot() {
+  if (!api.token) return;
+  $('#login-view').classList.add('hidden'); $('#app').classList.remove('hidden');
+  $('#user-label').textContent = `${api.user.username} (${api.user.role})`;
+  document.querySelectorAll('#nav button').forEach((b) => b.addEventListener('click', () => show(b.dataset.view)));
+  applyBranding();
+  show('dashboard');
+}
+async function applyBranding() {
+  try {
+    const j = await api.get('/settings');
+    const s = j.data[0];
+    if (s.company_name) document.title = `${s.company_name} — Order Management`;
+    const brand = document.querySelector('.brand');
+    if (brand) {
+      brand.innerHTML = '';
+      if (s.company_logo) {
+        const img = document.createElement('img');
+        img.src = s.company_logo;
+        img.alt = 'logo';
+        img.style.cssText = 'height:30px;border-radius:6px;background:#fff';
+        brand.appendChild(img);
+      } else {
+        const span = document.createElement('span');
+        span.textContent = '☕';
+        brand.appendChild(span);
+      }
+      const name = document.createElement('span');
+      name.textContent = s.company_name || 'Coffee ERP';
+      name.style.marginLeft = '8px';
+      brand.appendChild(name);
+    }
+  } catch {}
+}
+function show(view) {
+  currentView = view;
+  document.querySelectorAll('#nav button').forEach((b) => b.classList.toggle('active', b.dataset.view === view));
+  const fn = { dashboard: vDashboard, tracker: () => vOrders('tracker'), billing: () => vOrders('todays_billing'), pending: () => vOrders('pending_delivery'), delivered: () => vOrders('delivered'), customers: vCustomers, products: vProducts, reports: vReports, holidays: vHolidays, settings: vSettings }[view];
+  try {
+    const r = fn();
+    if (r && r.catch) r.catch((e) => {
+      diagnose('view-' + view, e.message, '');
+      $('#view').innerHTML = `<div class="card"><h2>Something didn't load</h2><p class="err">${esc(e.message)}</p><p class="muted small">The error was logged for review. Try again.</p></div>`;
+    });
+  } catch (e) {
+    diagnose('view-' + view, e.message, '');
+    $('#view').innerHTML = `<div class="card"><h2>Something didn't load</h2><p class="err">${esc(e.message)}</p></div>`;
+  }
+}
+
+// ---------- dashboard (never blank: shape-guarded + fallback card) ----------
+const DASH_FALLBACK = { mtd_orders: 0, mtd_qty: 0, today_billing_total: 0, pending_delivery_total: 0, today_qty_total: 0, top_customers: [], top_blends: [] };
+async function vDashboard() {
+  const v = $('#view'); v.innerHTML = '<div class="card">Loading…</div>';
+  let j = null;
+  try {
+    j = await api.get('/reports/dashboard');
+  } catch (e) {
+    diagnose('dashboard-load', e.message, 'vDashboard');
+    v.innerHTML = `<div class="card"><h2>Dashboard</h2><p class="err">Could not load live figures (${esc(e.message)}). Showing last-known zeros — retry in a moment.</p></div>`;
+    return;
+  }
+  const d = (j && Array.isArray(j.data) && j.data[0]) ? j.data[0] : DASH_FALLBACK;
+  if (!j.data || !j.data[0]) diagnose('dashboard-shape', 'dashboard payload missing data[0]', JSON.stringify(Object.keys(j || {})));
+  v.innerHTML = `
+    <div class="card"><h2>Dashboard <span class="muted small">— live, today ${esc(j.today || '')}</span></h2>
+      <div class="kpis">
+        <div class="kpi"><div class="n">${d.mtd_orders}</div><div class="l">MTD Orders</div></div>
+        <div class="kpi"><div class="n">${d.mtd_qty}</div><div class="l">MTD Quantity</div></div>
+        <div class="kpi"><div class="n">${d.today_billing_total}</div><div class="l">Today's Billing Total</div></div>
+        <div class="kpi"><div class="n">${d.pending_delivery_total}</div><div class="l">Pending Delivery Total</div></div>
+        <div class="kpi"><div class="n">${d.today_qty_total}</div><div class="l">Today's Quantity Total</div></div>
+      </div></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+    <div class="card"><h2>Top 10 Customers</h2>
+      <table class="grid"><tr><th>Customer</th><th>Qty</th></tr>
+      ${d.top_customers.map((b) => `<tr><td>${esc(b.ledger_name)}</td><td>${b.qty}</td></tr>`).join('')}</table></div>
+    <div class="card"><h2>Top 10 Blends</h2>
+      <table class="grid"><tr><th>Blend</th><th>Qty</th></tr>
+      ${d.top_blends.map((b) => `<tr><td>${esc(b.blend)}</td><td>${b.qty}</td></tr>`).join('')}</table></div>
+    </div>`;
+}
+
+// ---------- orders ----------
+const STAGE_META = {
+  tracker: { title: 'Order Tracker', desc: 'Orders waiting for billing (future billing date or advance payment pending).' },
+  todays_billing: { title: "Today's Billing", desc: 'Eligible today: billing date = today + payment condition satisfied.' },
+  pending_delivery: { title: 'Pending Delivery', desc: 'Billed, not yet delivered.' },
+  delivered: { title: 'Delivered Orders', desc: 'Completed deliveries. Order IDs never change.' },
+};
+
+async function vOrders(stage) {
+  const v = $('#view');
+  const m = STAGE_META[stage];
+  v.innerHTML = `<div class="card"><h2>${m.title}</h2><p class="muted">${m.desc}</p>
+    <div class="toolbar">
+      ${stage === 'delivered' ? `<input id="f-q" placeholder="Search order / customer / blend…" size="32">
+      <input id="f-from" type="date" title="Billing from"><input id="f-to" type="date" title="Billing to">
+      <button class="ghost" id="f-go">Filter</button>` : ''}
+      ${stage === 'tracker' ? '<button class="primary" id="new-order-btn">+ New Order</button><button class="ghost" id="trk-bulk-btn">Bulk Order Upload</button>' : ''}
+      <button class="ghost" id="export-btn">Export CSV</button>
+      ${stage === 'delivered' ? '<button class="ghost" id="bulk-btn">Bulk Upload</button>' : ''}
+      ${stage === 'delivered' && api.user && api.user.role === 'admin' ? '<button class="danger" id="bulk-del-btn">Delete Selected</button><button class="ghost" id="dup-find-btn">Find Duplicates</button>' : ''}
+    </div><div id="tbl">Loading…</div><div class="pager" id="pager"></div></div>`;
+  if (stage === 'tracker') {
+    $('#new-order-btn').addEventListener('click', () => orderForm());
+    $('#trk-bulk-btn').addEventListener('click', () => bulkModal('orders', () => loadOrders(stage, 1)));
+  }
+  if (stage === 'delivered') {
+    $('#f-go').addEventListener('click', () => loadOrders(stage, 1));
+    $('#bulk-btn').addEventListener('click', () => bulkModal('delivered', () => loadOrders(stage, 1)));
+    if (api.user && api.user.role === 'admin') {
+      $('#bulk-del-btn').addEventListener('click', bulkDeleteSelected);
+      $('#dup-find-btn').addEventListener('click', findDuplicates);
+    }
+  }
+  $('#export-btn').addEventListener('click', () => exportCSV(stage));
+  await loadOrders(stage, 1);
+}
+
+async function loadOrders(stage, page) {
+  const isDel = stage === 'delivered';
+  const q = isDel ? $('#f-q').value.trim() : '';
+  const from = isDel ? $('#f-from').value : '';
+  const to = isDel ? $('#f-to').value : '';
+  const params = new URLSearchParams({ stage, page, limit: 50, ...(q ? { q } : {}), ...(from ? { from } : {}), ...(to ? { to } : {}) });
+  const j = await api.get('/orders?' + params.toString());
+  const rows = j.data;
+  const tbl = $('#tbl');
+  if (!rows.length) { tbl.innerHTML = '<p class="muted">No orders in this view.</p>'; $('#pager').innerHTML = ''; return; }
+  const isAdmin = api.user && api.user.role === 'admin';
+  const actionCol = stage !== 'delivered' || isAdmin;
+  tbl.innerHTML = `<table class="grid"><tr>${isDel && isAdmin ? '<th><input type="checkbox" id="sel-all" title="Select all"></th>' : ''}<th>Order ID</th><th>Order Date</th><th>Customer/Ledger</th><th>Blend</th><th>Qty</th><th>UOM</th><th>Pay Type</th><th>Pay Status</th><th>Billing Date</th><th>Billing</th>${stage === 'tracker' ? '<th>Required Action</th>' : ''}${stage === 'pending_delivery' ? '<th>Billed</th>' : ''}${stage === 'delivered' ? '<th>Delivered On</th>' : ''}${actionCol ? '<th>Action</th>' : ''}</tr>
+    ${rows.map((o) => `<tr>
+      ${isDel && isAdmin ? `<td><input type="checkbox" class="sel-row" value="${esc(o.order_id)}"></td>` : ''}
+      <td><b>${esc(o.order_id)}</b></td><td>${esc(o.order_date)}</td><td>${esc(o.ledger_name)}</td>
+      <td>${esc(o.blend_snapshot)}</td><td>${o.qty}</td><td>${esc(o.uom)}</td>
+      <td><span class="badge ${o.payment_type === 'Advance' ? 'b-advance' : 'b-credit'}">${esc(o.payment_type)}</span></td>
+      <td>${esc(o.payment_status)}</td><td>${esc(o.billing_date)}</td><td>${esc(o.billing_status)}</td>
+      ${stage === 'tracker' ? `<td>${o.waiting_reason === 'Ready for billing' ? '<span class="badge b-ready">Ready</span>' : `<span class="badge b-wait">${esc(o.waiting_reason)}</span>`}</td>` : ''}
+      ${stage === 'pending_delivery' ? `<td>${esc(o.billed_at || '')}</td>` : ''}
+      ${stage === 'delivered' ? `<td>${esc(o.delivered_on || '')}</td>` : ''}
+      ${actionCol ? `<td style="white-space:nowrap">${rowActions(o, stage)}</td>` : ''}
+    </tr>`).join('')}</table>`;
+  window._orderCache = Object.fromEntries(rows.map((o) => [o.order_id, o]));
+  tbl.querySelectorAll('button[data-act]').forEach((b) => b.addEventListener('click', () => orderAction(b.dataset.act, b.dataset.id)));
+  const selAll = $('#sel-all');
+  if (selAll) selAll.addEventListener('change', () => {
+    tbl.querySelectorAll('.sel-row').forEach((c) => { c.checked = selAll.checked; });
+  });
+  const totalPages = Math.max(1, Math.ceil(j.total / 50));
+  $('#pager').innerHTML = `Page ${j.page} of ${totalPages} (${j.total} orders)
+    ${j.page > 1 ? '<button class="ghost small" id="pg-prev">‹ Prev</button>' : ''}
+    ${j.page < totalPages ? '<button class="ghost small" id="pg-next">Next ›</button>' : ''}`;
+  const prev = $('#pg-prev'), next = $('#pg-next');
+  if (prev) prev.addEventListener('click', () => loadOrders(stage, j.page - 1));
+  if (next) next.addEventListener('click', () => loadOrders(stage, j.page + 1));
+}
+
+function rowActions(o, stage) {
+  const id = esc(o.order_id);
+  if (stage === 'delivered') {
+    return api.user && api.user.role === 'admin'
+      ? `<button class="danger small" data-act="del" data-id="${id}">Delete</button>` : '';
+  }
+  if (stage === 'tracker') return `
+    ${o.payment_type === 'Advance' && o.payment_status !== 'Payment Received' ? `<button class="ghost small" data-act="pay" data-id="${id}">Mark Paid</button> ` : ''}
+    <button class="ghost small" data-act="edit" data-id="${id}">Edit</button>
+    ${api.user && api.user.role === 'admin' ? ` <button class="danger small" data-act="del" data-id="${id}">Delete</button>` : ''}`;
+  if (stage === 'todays_billing') return `<button class="primary small" data-act="bill" data-id="${id}">BILL</button>`;
+  if (stage === 'pending_delivery') return `<button class="primary small" data-act="deliver" data-id="${id}">Deliver</button>`;
+  return '';
+}
+
+async function orderAction(act, id) {
+  try {
+    if (act === 'bill') {
+      const o = window._orderCache[id];
+      openModal(`<h3>Bill order ${esc(id)}?</h3>
+        <p>${esc(o ? o.ledger_name : '')} — ${esc(o ? o.blend_snapshot : '')} — ${o ? o.qty : ''} ${esc(o ? o.uom : '')}</p>
+        <p class="muted small">This moves the order to Pending Delivery. This cannot be undone.</p>
+        <div style="display:flex;gap:8px"><button class="primary" id="cf-bill-yes">Confirm BILL</button>
+        <button class="ghost" id="cf-bill-no">Cancel</button></div>`);
+      $('#cf-bill-no').addEventListener('click', closeModal);
+      $('#cf-bill-yes').addEventListener('click', async () => {
+        try {
+          await api.post(`/orders/${id}/bill`, {});
+          closeModal(); toast(`Billed ${id}`); loadOrders(currentView, 1);
+        } catch (e) { alert(e.message); }
+      });
+      return;
+    } else if (act === 'pay') {
+      await api.post(`/orders/${id}/payment`, { payment_status: 'Payment Received' });
+      toast(`Payment received for ${id}`);
+    } else if (act === 'deliver') {
+      openModal(`<h3>Deliver order ${esc(id)}?</h3>
+        <div class="form-grid"><label>Delivered On*<input id="cf-del-date" type="date" value="${new Date().toISOString().slice(0, 10)}"></label></div>
+        <div class="err" id="cf-del-err"></div>
+        <div style="margin-top:12px;display:flex;gap:8px"><button class="primary" id="cf-del-yes">Confirm Delivery</button>
+        <button class="ghost" id="cf-del-no">Cancel</button></div>`);
+      $('#cf-del-no').addEventListener('click', closeModal);
+      $('#cf-del-yes').addEventListener('click', async () => {
+        try {
+          await api.post(`/orders/${id}/deliver`, { delivered_on: $('#cf-del-date').value, delivery_status: 'Delivered' });
+          closeModal(); toast(`Delivered ${id}`); loadOrders(currentView, 1);
+        } catch (e) { $('#cf-del-err').textContent = e.message; }
+      });
+      return;
+    } else if (act === 'edit') {
+      const o = window._orderCache[id];
+      orderForm(o);
+      return;
+    } else if (act === 'del') {
+      openModal(`<h3>Delete order ${esc(id)}?</h3><p class="muted">Admin only. This removes the transaction permanently.</p>
+        <div style="display:flex;gap:8px"><button class="danger" id="cf-del-yes">Delete</button>
+        <button class="ghost" id="cf-del-no">Cancel</button></div>`);
+      $('#cf-del-no').addEventListener('click', closeModal);
+      $('#cf-del-yes').addEventListener('click', async () => {
+        try {
+          await api.del(`/orders/${id}`);
+          closeModal(); toast(`Deleted ${id}`); loadOrders(currentView, 1);
+        } catch (e) { alert(e.message); }
+      });
+      return;
+    }
+  } catch (e) { alert(e.message); return; }
+  loadOrders(currentView, 1);
+}
+
+// New / edit order form. Changing customer reloads approved blends and clears stale blend.
+async function orderForm(existing) {
+  const custs = (await api.get('/customers?limit=1000')).data;
+  openModal(`<h3>${existing ? 'Edit Order ' + esc(existing.order_id) : 'New Order → Order Tracker'}</h3>
+    <div class="err" id="of-err"></div>
+    <div class="form-grid">
+      <label>Customer/Ledger*<span class="ac-wrap"><input id="of-cust-q" autocomplete="off" placeholder="Type to search…" value="${existing ? esc(existing.ledger_name || '') : ''}"><input type="hidden" id="of-cust" value="${existing ? esc(existing.ledger_id || '') : ''}"><ul id="of-cust-ac" class="ac-list" style="display:none"></ul></span></label>
+      <label>Blend* (approved only)<select id="of-blend"><option value="">— select customer first —</option></select></label>
+      <label>Quantity*<input id="of-qty" type="number" min="0.01" step="0.01" value="${existing ? existing.qty : ''}"></label>
+      <label>UOM*<select id="of-uom"><option>KG</option><option>LTR</option><option>PAC</option></select></label>
+      <label>Billing Date (optional — leave blank)<input id="of-bd" type="date" value="${existing && existing.billing_date ? existing.billing_date : ''}"></label>
+      <label>Payment Status<select id="of-ps"><option>Pending</option><option>Payment Received</option><option>Credit</option></select></label>
+      <label>Remarks<input id="of-rem" value="${existing ? esc(existing.remarks || '') : ''}"></label>
+    </div>
+    <p class="muted small" id="of-hint"></p>
+    <div style="margin-top:12px;display:flex;gap:8px">
+      <button class="primary" id="of-save">${existing ? 'Update Order' : 'Create Order'}</button>
+      <button class="ghost" id="of-cancel">Cancel</button>
+    </div>`);
+  if (existing) $('#of-uom').value = existing.uom;
+  $('#of-cancel').addEventListener('click', closeModal);
+
+  const custSel = $('#of-cust'), blendSel = $('#of-blend'), psSel = $('#of-ps'), hint = $('#of-hint');
+  const custQ = $('#of-cust-q'), custAc = $('#of-cust-ac');
+  const payTypeOf = (lid) => { const c = custs.find((x) => x.ledger_id === lid); return c ? c.payment_type : ''; };
+  // ---- ledger autocomplete: mousedown/touchstart fire before blur, so the
+  // tap always lands; click is kept for keyboard/mouse parity. ----------
+  let acItems = [], acHi = -1, acTimer = null;
+  function paintAc() {
+    if (!acItems.length) { custAc.style.display = 'none'; return; }
+    custAc.style.display = 'block';
+    custAc.innerHTML = acItems.map((c, i) =>
+      `<li data-i="${i}" class="${i === acHi ? 'active' : ''}"><b>${esc(c.ledger_name)}</b><br><small>${esc(c.ledger_id)} · ${esc(c.payment_type || '')}${c.route ? ' · ' + esc(c.route) : ''}</small></li>`).join('');
+    custAc.querySelectorAll('li').forEach((li) => {
+      li.addEventListener('mousedown', (e) => { e.preventDefault(); pickAc(Number(li.dataset.i)); });
+      li.addEventListener('touchstart', (e) => { e.preventDefault(); pickAc(Number(li.dataset.i)); }, { passive: false });
+      li.addEventListener('click', () => pickAc(Number(li.dataset.i)));
+    });
+  }
+  function pickAc(i) {
+    const c = acItems[i];
+    if (!c) return;
+    custQ.value = c.ledger_name;
+    custSel.value = c.ledger_id;
+    custAc.style.display = 'none';
+    loadBlends(null); // new customer choice drops any stale blend
+  }
+  async function searchAc(q) {
+    let rows = custs.filter((c) => (c.ledger_name + ' ' + c.ledger_id).toLowerCase().includes(q.toLowerCase())).slice(0, 12);
+    if (!rows.length) {
+      try { rows = (await api.get(`/customers?q=${encodeURIComponent(q)}&limit=12`)).data || []; } catch {}
+    }
+    acItems = rows; acHi = rows.length ? 0 : -1; paintAc();
+  }
+  custQ.addEventListener('input', () => {
+    custSel.value = ''; // typing invalidates the previous exact pick
+    clearTimeout(acTimer);
+    const q = custQ.value.trim();
+    if (q.length < 1) { custAc.style.display = 'none'; return; }
+    acTimer = setTimeout(() => searchAc(q), 120);
+  });
+  custQ.addEventListener('keydown', (e) => {
+    if (custAc.style.display === 'none') return;
+    if (e.key === 'ArrowDown') { e.preventDefault(); acHi = Math.min(acItems.length - 1, acHi + 1); paintAc(); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); acHi = Math.max(0, acHi - 1); paintAc(); }
+    else if (e.key === 'Enter' && acHi >= 0) { e.preventDefault(); pickAc(acHi); }
+    else if (e.key === 'Escape') custAc.style.display = 'none';
+  });
+  custQ.addEventListener('blur', () => setTimeout(() => { custAc.style.display = 'none'; }, 180));
+  async function loadBlends(keepBlend) {
+    const lid = custSel.value;
+    blendSel.innerHTML = '<option value="">— loading —</option>';
+    if (!lid) { blendSel.innerHTML = '<option value="">— select customer first —</option>'; return; }
+    const pt = payTypeOf(lid);
+    // default payment status from customer type
+    if (!existing) psSel.value = pt === 'Advance' ? 'Pending' : 'Credit';
+    else if (!keepBlend) psSel.value = pt === 'Advance' ? 'Payment Received' : 'Credit';
+    const blends = (await api.get(`/customers/${lid}/blends`)).data;
+    if (!blends.length) { blendSel.innerHTML = '<option value="">No approved blends</option>'; hint.textContent = 'This customer has no approved blends.'; return; }
+    blendSel.innerHTML = blends.map((b) => `<option value="${b.id}">${esc(b.name)} — ₹${b.price}</option>`).join('');
+    if (blends.length === 1) hint.textContent = 'One approved blend — auto-selected.';
+    else hint.textContent = `${blends.length} approved blends — choose one.`;
+    if (keepBlend) {
+      const match = blends.find((b) => b.name === keepBlend);
+      if (match) blendSel.value = match.id;
+    }
+  }
+  // (customer changes flow through pickAc → loadBlends; typing clears the pick)
+  if (existing) { psSel.value = existing.payment_status; await loadBlends(existing.blend_snapshot); }
+
+  // live duplicate hint for new customers n/a here; idempotency key guards double-submit
+  const idemKey = crypto.randomUUID();
+  let saving = false;
+  $('#of-save').addEventListener('click', async () => {
+    if (saving) return; saving = true;
+    if (!custSel.value) {
+      $('#of-err').textContent = custQ.value.trim()
+        ? `Pick "${custQ.value.trim()}" from the suggestions (typed text alone is not a customer).`
+        : 'Pick a customer from the suggestions.';
+      saving = false; return;
+    }
+    const payload = {
+      ledger_id: custSel.value,
+      product_id: Number(blendSel.value) || undefined,
+      blend: blendSel.selectedOptions[0] ? blendSel.selectedOptions[0].textContent.split(' — ₹')[0] : '',
+      qty: Number($('#of-qty').value), uom: $('#of-uom').value,
+      billing_date: $('#of-bd').value, payment_status: psSel.value,
+      remarks: $('#of-rem').value, idempotency_key: existing ? undefined : idemKey,
+    };
+    try {
+      if (existing) await api.put(`/orders/${existing.order_id}`, payload);
+      else await api.post('/orders', payload);
+      closeModal(); toast(existing ? 'Order updated' : 'Order created in Order Tracker');
+      loadOrders(currentView, 1);
+    } catch (e) { $('#of-err').textContent = e.message; saving = false; }
+  });
+}
+
+async function findDuplicates() {
+  openModal(`<h3>Duplicate Delivered Orders</h3><div id="dup-body">Scanning (same Ledger + Order Date + Qty + Blend)…</div>
+    <div style="margin-top:12px;display:flex;gap:8px"><button class="ghost" id="dup-close">Close</button></div>`);
+  $('#dup-close').addEventListener('click', closeModal);
+  try {
+    const j = await api.get('/admin/duplicates');
+    const groups = j.data;
+    if (!groups.length) { $('#dup-body').innerHTML = '<p>No duplicates found. Every order exists exactly once.</p>'; return; }
+    const n = groups.reduce((s, g) => s + g.remove.length, 0);
+    $('#dup-body').innerHTML = `<p><b>${groups.length}</b> duplicate group(s), <b>${n}</b> extra row(s). The earliest record (original history first) is kept; the rest are removed only when you confirm.</p>
+      <table class="grid"><tr><th>Keep</th><th>Remove</th><th>Customer</th><th>Date</th><th>Blend</th></tr>
+      ${groups.slice(0, 100).map((g) => {
+        const m = g.members[0];
+        return `<tr><td><b>${esc(g.keep)}</b></td><td>${g.remove.map(esc).join(', ')}</td><td>${esc(m.ledger_name)}</td><td>${esc(m.order_date)}</td><td>${esc(m.blend_snapshot)} × ${m.qty}</td></tr>`;
+      }).join('')}</table>
+      ${groups.length > 100 ? `<p class="muted small">Showing first 100 of ${groups.length} groups.</p>` : ''}
+      <div style="margin-top:12px"><button class="danger" id="dup-merge">Merge — remove ${n} duplicate row(s), keep originals</button></div>`;
+    $('#dup-merge').addEventListener('click', async () => {
+      if (!confirm(`Remove ${n} duplicate rows? Originals are kept.`)) return;
+      try {
+        const r = await api.post('/admin/duplicates/merge', {});
+        toast(r.message); closeModal(); loadOrders(currentView, 1);
+      } catch (e) { alert(e.message); }
+    });
+  } catch (e) { $('#dup-body').innerHTML = `<p class="err">${esc(e.message)}</p>`; }
+}
+
+async function bulkDeleteSelected() {  const ids = [...document.querySelectorAll('.sel-row:checked')].map((c) => c.value);
+  if (!ids.length) { toast('Select at least one order.'); return; }
+  openModal(`<h3>Delete ${ids.length} selected order(s)?</h3><p class="muted">Admin only. Removes them from Delivered history permanently.</p>
+    <div style="display:flex;gap:8px"><button class="danger" id="cf-bdel-yes">Delete ${ids.length}</button>
+    <button class="ghost" id="cf-bdel-no">Cancel</button></div>`);
+  $('#cf-bdel-no').addEventListener('click', closeModal);
+  $('#cf-bdel-yes').addEventListener('click', async () => {
+    try {
+      const j = await api.post('/orders/bulk-delete', { order_ids: ids });
+      closeModal(); toast(j.message); loadOrders(currentView, 1);
+    } catch (e) { alert(e.message); }
+  });
+}
+
+async function exportCSV(stage) {
+  // Export the COMPLETE filtered dataset across all pages — never just page 1.
+  const isDel = stage === 'delivered';
+  const q = isDel ? $('#f-q').value.trim() : '';
+  const from = isDel ? $('#f-from').value : '';
+  const to = isDel ? $('#f-to').value : '';
+  const params = new URLSearchParams({ stage, limit: 5000, ...(q ? { q } : {}), ...(from ? { from } : {}), ...(to ? { to } : {}) });
+  let all = [], page = 1, total = 0;
+  for (;;) {
+    params.set('page', page);
+    const j = await api.get('/orders?' + params.toString());
+    all = all.concat(j.data);
+    total = j.total;
+    if (all.length >= total || !j.data.length) break;
+    page++;
+  }
+  if (!all.length) { toast('Nothing to export'); return; }
+  const rows = all;
+  const cols = ['order_id', 'order_date', 'ledger_name', 'blend_snapshot', 'qty', 'uom', 'payment_type', 'payment_status', 'billing_date', 'billing_status', 'delivered_on', 'delivery_status'];
+  const csv = [cols.join(',')].concat(rows.map((o) => cols.map((c) => `"${String(o[c] || '').replace(/"/g, '""')}"`).join(','))).join('\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
+  a.download = `${stage}-${new Date().toISOString().slice(0, 10)}.csv`; a.click();
+}
+
+// ---------- customers ----------
+async function vCustomers() {
+  const v = $('#view');
+  v.innerHTML = `<div class="card"><h2>Customer / Ledger</h2>
+    <div class="toolbar"><input id="c-q" placeholder="Search name / ID / mobile…" size="32">
+    <button class="ghost" id="c-go">Search</button><button class="primary" id="c-new">+ New Customer</button>
+    <button class="ghost" id="c-bulk">Bulk Upload</button></div>
+    <div id="c-tbl"></div></div>`;
+  $('#c-go').addEventListener('click', loadCustomers);
+  $('#c-new').addEventListener('click', () => customerForm());
+  $('#c-bulk').addEventListener('click', () => bulkModal('customers', loadCustomers));
+  await loadCustomers();
+}
+async function loadCustomers() {
+  const q = $('#c-q').value.trim();
+  const j = await api.get(`/customers?limit=1000&q=${encodeURIComponent(q)}`);
+  const isAdmin = api.user && api.user.role === 'admin';
+  $('#c-tbl').innerHTML = `<table class="grid"><tr><th>Ledger ID (permanent)</th><th>Ledger Name</th><th>Mobile</th><th>Route</th><th>Route Day</th><th>Pay Type</th><th>Approved Blends</th><th></th></tr>
+    ${j.data.map((c) => `<tr><td><b>${esc(c.ledger_id)}</b></td><td>${esc(c.ledger_name)}</td><td>${esc(c.mobile || '')}</td>
+    <td>${esc(c.route || '')}</td><td>${esc(c.route_day || '')}</td>
+    <td><span class="badge ${c.payment_type === 'Advance' ? 'b-advance' : 'b-credit'}">${esc(c.payment_type)}</span></td>
+    <td>${esc((c.approved_blends || []).join(', '))}</td>
+    <td style="white-space:nowrap"><button class="ghost small" data-id="${esc(c.ledger_id)}" data-act="edit">Edit</button>
+    <button class="ghost small" data-id="${esc(c.ledger_id)}" data-act="blends">Blends</button>
+    <button class="ghost small" data-id="${esc(c.ledger_id)}" data-act="prices">Pricing</button>
+    ${isAdmin ? `<button class="danger small" data-id="${esc(c.ledger_id)}" data-act="del">Delete</button>` : ''}</td></tr>`).join('')}</table>
+    <p class="muted small">${j.total} customers (showing all ${j.data.length})</p>`;
+  window._custCache = Object.fromEntries(j.data.map((c) => [c.ledger_id, c]));
+  $('#c-tbl').querySelectorAll('button').forEach((b) => b.addEventListener('click', async () => {
+    const c = window._custCache[b.dataset.id];
+    if (b.dataset.act === 'edit') customerForm(c);
+    else if (b.dataset.act === 'blends') approvalForm(c);
+    else if (b.dataset.act === 'prices') pricingForm(c);
+    else if (b.dataset.act === 'del') {
+      openModal(`<h3>Delete customer ${esc(c.ledger_id)}?</h3><p class="muted">Admin only. Blocked while any order references this customer.</p>
+        <div style="display:flex;gap:8px"><button class="danger" id="cf-cdel-yes">Delete</button>
+        <button class="ghost" id="cf-cdel-no">Cancel</button></div>`);
+      $('#cf-cdel-no').addEventListener('click', closeModal);
+      $('#cf-cdel-yes').addEventListener('click', async () => {
+        try { await api.del(`/customers/${c.ledger_id}`); closeModal(); toast('Customer deleted'); loadCustomers(); }
+        catch (e) { alert(e.message); }
+      });
+    }
+  }));
+}
+function customerForm(existing) {
+  openModal(`<h3>${existing ? `Edit ${esc(existing.ledger_id)} (ID never changes)` : 'New Customer/Ledger'}</h3>
+    <div class="err" id="cf-err"></div>
+    <div class="form-grid">
+      <label>Name*<input id="cf-name" value="${existing ? esc(existing.ledger_name) : ''}"></label>
+      <label>Mobile<input id="cf-mobile" value="${existing ? esc(existing.mobile || '') : ''}"></label>
+      <label>Payment Type<select id="cf-pt"><option>Credit</option><option>Advance</option></select></label>
+      <label>Status<select id="cf-st"><option>Active</option><option>Inactive</option></select></label>
+      <label>Route<input id="cf-route" value="${existing ? esc(existing.route || '') : ''}"></label>
+      <label>Route Day<input id="cf-day" value="${existing ? esc(existing.route_day || '') : ''}"></label>
+      <label>City<input id="cf-city" value="${existing ? esc(existing.city || '') : ''}"></label>
+      <label>Area<input id="cf-area" value="${existing ? esc(existing.area || '') : ''}"></label>
+    </div>
+    <label style="display:block;margin-top:8px;font-size:13px">Address<textarea id="cf-addr" rows="2" style="width:100%">${existing ? esc(existing.address || '') : ''}</textarea></label>
+    <div id="cf-dup" style="margin-top:8px"></div>
+    <div style="margin-top:12px;display:flex;gap:8px"><button class="primary" id="cf-save">${existing ? 'Update (same ID)' : 'Create'}</button>
+    <button class="ghost" id="cf-cancel">Cancel</button></div>`);
+  if (existing) { $('#cf-pt').value = existing.payment_type; $('#cf-st').value = existing.status; }
+  $('#cf-cancel').addEventListener('click', closeModal);
+  // live duplicate warning (never silent-merge)
+  let t;
+  $('#cf-name').addEventListener('input', () => {
+    clearTimeout(t);
+    t = setTimeout(async () => {
+      const name = $('#cf-name').value;
+      if (name.trim().length < 3) { $('#cf-dup').innerHTML = ''; return; }
+      try {
+        const j = await api.post('/customers/check-duplicate', { ledger_name: name, mobile: $('#cf-mobile').value });
+        $('#cf-dup').innerHTML = j.data.length
+          ? `<p class="err">Possible duplicate: ${j.data.map((m) => `${esc(m.customer.ledger_id)} — ${esc(m.customer.ledger_name)} (${m.level}${m.score ? ' ' + m.score : ''})`).join('<br>')}</p>`
+          : '<p class="muted small">No duplicates found.</p>';
+      } catch {}
+    }, 400);
+  });
+  $('#cf-save').addEventListener('click', async () => {
+    const payload = {
+      ledger_name: $('#cf-name').value, mobile: $('#cf-mobile').value || null,
+      payment_type: $('#cf-pt').value, status: $('#cf-st').value,
+      route: $('#cf-route').value || null, route_day: $('#cf-day').value || null,
+      city: $('#cf-city').value || null, area: $('#cf-area').value || null, address: $('#cf-addr').value || null,
+    };
+    try {
+      if (existing) await api.put(`/customers/${existing.ledger_id}`, payload);
+      else await api.post('/customers', payload);
+      closeModal(); toast(existing ? 'Customer updated (same ID)' : 'Customer created'); loadCustomers();
+    } catch (e) { $('#cf-err').textContent = e.message; }
+  });
+}
+async function approvalForm(c) {
+  const prods = (await api.get('/products?limit=200')).data;
+  const current = new Set(c.approved_blends || []);
+  openModal(`<h3>Approved Blends — ${esc(c.ledger_name)}</h3>
+    <div style="max-height:320px;overflow:auto;border:1px solid #e5ddd0;border-radius:6px;padding:8px">
+    ${prods.map((p) => `<label style="display:block;font-size:13px"><input type="checkbox" value="${p.id}" ${current.has(p.name) ? 'checked' : ''}> ${esc(p.name)} (${p.uom})</label>`).join('')}
+    </div>
+    <div style="margin-top:12px;display:flex;gap:8px"><button class="primary" id="ab-save">Save</button>
+    <button class="ghost" id="ab-cancel">Cancel</button></div>`);
+  $('#ab-cancel').addEventListener('click', closeModal);
+  $('#ab-save').addEventListener('click', async () => {
+    const ids = [...document.querySelectorAll('#modal-body input[type=checkbox]:checked')].map((x) => Number(x.value));
+    try { await api.put(`/customers/${c.ledger_id}/approvals`, { product_ids: ids }); closeModal(); toast('Approved blends updated'); loadCustomers(); }
+    catch (e) { alert(e.message); }
+  });
+}
+async function pricingForm(c) {
+  const blends = (await api.get(`/customers/${c.ledger_id}/blends`)).data;
+  const saved = Object.fromEntries((await api.get(`/customers/${c.ledger_id}/prices`)).data.map((r) => [r.product_id, r.price]));
+  openModal(`<h3>Customer Pricing — ${esc(c.ledger_name)}</h3><p class="muted small">Blank = standard price. This customer's price is used for their orders.</p>
+    ${blends.map((b) => `<label style="display:block;font-size:13px;margin:6px 0">${esc(b.name)} <input type="number" min="0" step="0.01" data-pid="${b.id}" value="${saved[b.id] !== undefined ? saved[b.id] : ''}" placeholder="std"></label>`).join('') || '<p class="muted">No approved blends yet.</p>'}
+    <div style="margin-top:12px;display:flex;gap:8px"><button class="primary" id="pr-save">Save</button>
+    <button class="ghost" id="pr-cancel">Cancel</button></div>`);
+  $('#pr-cancel').addEventListener('click', closeModal);
+  $('#pr-save').addEventListener('click', async () => {
+    const prices = {};
+    document.querySelectorAll('#modal-body input[data-pid]').forEach((x) => { if (x.value !== '') prices[x.dataset.pid] = Number(x.value); });
+    try { await api.put(`/customers/${c.ledger_id}/prices`, { prices }); closeModal(); toast('Pricing updated'); }
+    catch (e) { alert(e.message); }
+  });
+}
+
+// ---------- products ----------
+async function vProducts() {
+  const v = $('#view');
+  v.innerHTML = `<div class="card"><h2>Product Summary (canonical)</h2>
+    <div class="toolbar"><input id="p-q" placeholder="Search products…" size="32">
+    <button class="ghost" id="p-go">Search</button><button class="primary" id="p-new">+ New Product</button>
+    <button class="ghost" id="p-bulk">Bulk Upload</button></div>
+    <div id="p-tbl"></div></div>`;
+  $('#p-go').addEventListener('click', loadProducts);
+  $('#p-new').addEventListener('click', () => productForm());
+  $('#p-bulk').addEventListener('click', () => bulkModal('products', loadProducts));
+  await loadProducts();
+}
+async function loadProducts() {
+  const q = $('#p-q').value.trim();
+  const j = await api.get(`/products?limit=1000&q=${encodeURIComponent(q)}`);
+  window._prodCache = Object.fromEntries(j.data.filter((p) => p.id).map((p) => [p.id, p]));
+  $('#p-tbl').innerHTML = `<table class="grid"><tr><th>SKU ID</th><th>Product / Blend</th><th>UOM</th><th>Status</th><th>Std Price</th><th>Orders</th><th>Qty</th><th>Source</th><th></th></tr>
+    ${j.data.map((p) => `<tr><td>${esc(p.sku_id || '—')}</td><td>${esc(p.name)}</td><td>${esc(p.uom)}</td><td>${esc(p.status)}</td><td>${p.std_price || 0}</td><td>${p.total_orders || 0}</td><td>${p.total_qty || 0}</td><td>${esc(p.source || '')}</td>
+    <td>${p.id ? `<button class="ghost small" data-id="${p.id}">Edit</button>` : '<span class="muted small">add to master to edit</span>'}</td></tr>`).join('')}</table>
+    <p class="muted small">${j.total} products (master + blends found in orders)</p>`;
+  $('#p-tbl').querySelectorAll('button').forEach((b) => b.addEventListener('click', () => productForm(window._prodCache[b.dataset.id])));
+}
+function productForm(existing) {
+  openModal(`<h3>${existing ? 'Edit Product' : 'New Product'}</h3><div class="err" id="pf-err"></div>
+    ${existing ? `<p class="muted small">Product ID: <b>${esc(existing.sku_id || '')}</b> (permanent, never changes)</p>` : '<p class="muted small">Product ID is generated automatically.</p>'}
+    <div class="form-grid">
+      <label>Name*<input id="pf-name" value="${existing ? esc(existing.name) : ''}" size="40"></label>
+      <label>UOM<select id="pf-uom"><option>KG</option><option>LTR</option><option>PAC</option></select></label>
+      <label>Std Price<input id="pf-price" type="number" min="0" step="0.01" value="${existing ? existing.std_price || 0 : 0}"></label>
+    </div>
+    <div id="pf-match" style="margin-top:8px"></div>
+    <div style="margin-top:12px;display:flex;gap:8px"><button class="primary" id="pf-save">${existing ? 'Update' : 'Create'}</button>
+    <button class="ghost" id="pf-cancel">Cancel</button></div>`);
+  if (existing) $('#pf-uom').value = existing.uom;
+  $('#pf-cancel').addEventListener('click', closeModal);
+  let t;
+  $('#pf-name').addEventListener('input', () => {
+    clearTimeout(t);
+    t = setTimeout(async () => {
+      const name = $('#pf-name').value;
+      if (name.trim().length < 3) return;
+      try {
+        const j = await api.post('/products/match', { name });
+        $('#pf-match').innerHTML = j.data.length ? `<p class="err">Similar canonical product(s): ${j.data.map((m) => `${esc(m.name)} (${m.level} ${m.score || ''})`).join('; ')}</p>` : '';
+      } catch {}
+    }, 400);
+  });
+  $('#pf-save').addEventListener('click', async () => {
+    try {
+      const payload = { name: $('#pf-name').value, uom: $('#pf-uom').value, std_price: Number($('#pf-price').value) };
+      if (existing) await api.put(`/products/${existing.id}`, payload);
+      else await api.post('/products', payload);
+      closeModal(); toast('Product saved'); loadProducts();
+    } catch (e) { $('#pf-err').textContent = e.message; }
+  });
+}
+
+// ---------- reports: MoM / QoQ / New Customers / Follow-up ----------
+async function vReports() {
+  const v = $('#view');
+  const thisMonth = new Date().toISOString().slice(0, 7);
+  const thisYear = new Date().getFullYear();
+  const qOpts = (sel) => [1, 2, 3, 4].map((q) => `<option value="${q}"${q === sel ? ' selected' : ''}>Q${q}</option>`).join('');
+  v.innerHTML = `<div class="card"><h2>Reports</h2>
+    <div class="toolbar">
+      <select id="r-kind">
+        <option value="mtd">Month-to-Date (MTD)</option>
+        <option value="mom">Month over Month</option>
+        <option value="mom-ledger">MoM — Ledger-wise</option>
+        <option value="qoq">Quarter over Quarter</option>
+        <option value="qoq-ledger">QoQ — Ledger-wise</option>
+        <option value="new-customers">New customers</option>
+        <option value="followup">Follow-up reminders</option>
+        <option value="not-ordered">Customers not ordered this month</option>
+      </select>
+      <span id="r-filters"></span>
+      <button class="ghost" id="r-go">Run</button>
+    </div><div id="r-out"></div></div>`;
+  const drawFilters = () => {
+    const kind = $('#r-kind').value;
+    let h = '';
+    if (kind === 'mtd') h = `<label>Month <input id="r-month" type="month" value="${thisMonth}"></label>`;
+    else if (kind === 'mom' || kind === 'mom-ledger') h = `<label>Month 2 <input id="r-month" type="month" value="${thisMonth}"></label><label>Month 1 (base) <input id="r-cmp" type="month"></label>`;
+    else if (kind === 'qoq' || kind === 'qoq-ledger') h = `<label>Year 2 <input id="r-year" type="number" value="${thisYear}" style="width:80px"></label><label>Quarter 2 <select id="r-q">${qOpts(1)}</select></label><label>Year 1 <input id="r-cyear" type="number" style="width:80px"></label><label>Quarter 1 <select id="r-cq"><option value="">auto</option>${qOpts(0)}</select></label>`;
+    else if (kind === 'new-customers') h = `<label>Month <input id="r-month" type="month" value="${thisMonth}"></label><label>Year <input id="r-nyear" type="number" value="${thisYear}" style="width:80px"></label>`;
+    else if (kind === 'not-ordered') h = `<input id="r-mth" type="month" value="${thisMonth}">`;
+    $('#r-filters').innerHTML = h;
+  };
+  $('#r-kind').addEventListener('change', drawFilters);
+  drawFilters();
+  $('#r-go').addEventListener('click', runReport);
+  await runReport();
+}
+async function runReport() {
+  const kind = $('#r-kind').value;
+  const out = $('#r-out'); out.innerHTML = 'Loading…';
+  function varRow(r, label) {
+    const dash = (v) => (v == null ? '—' : v + '%');
+    return `<tr><td><b>${esc(label)}</b></td><td>${r.orders}</td><td>${r.prev_orders}</td><td>${r.variance_orders}</td><td>${dash(r.variance_orders_pct)}</td><td>${r.qty}</td><td>${r.prev_qty}</td><td>${r.variance_qty}</td><td>${dash(r.variance_qty_pct)}</td></tr>`;
+  }
+  function varHead(p1, p2, firstCol) {
+    return `<table class="grid"><tr><th>${firstCol}</th><th>Orders ${esc(p1)}</th><th>Orders ${esc(p2)}</th><th>Orders Variance</th><th>Orders Variance %</th><th>Qty ${esc(p1)}</th><th>Qty ${esc(p2)}</th><th>Qty Variance</th><th>Qty Variance %</th></tr>`;
+  }
+  function periodHead(display) {
+    return `<h3 style="margin:6px 0">${esc(display)}</h3>`;
+  }
+  try {
+    if (kind === 'mtd') {
+      const j = await api.get(`/reports/mtd?month=${$('#r-month').value || ''}`);
+      const d = j.data[0];
+      out.innerHTML = `<h3>MTD — ${esc(d.month)}</h3>
+        <p><b>${d.total_orders}</b> orders · <b>${d.total_qty}</b> units across <b>${d.ledger_wise.length}</b> ledgers.</p>
+        <table class="grid"><tr><th>Ledger</th><th>Ledger ID</th><th>Orders</th><th>Quantity</th></tr>
+        ${d.ledger_wise.map((r) => `<tr><td>${esc(r.ledger_name)}</td><td>${esc(r.ledger_id)}</td><td>${r.orders}</td><td>${r.qty}</td></tr>`).join('') || '<tr><td colspan="4" class="muted">No orders this month.</td></tr>'}</table>`;
+    } else if (kind === 'new-customers') {
+      const mv = $('#r-month').value || `${$('#r-nyear').value}-${String(new Date().getMonth() + 1).padStart(2, '0')}`;
+      const j = await api.get(`/reports/new-customers?month=${mv}`);
+      out.innerHTML = `<h3>New Customers: ${j.total}${j.period ? ' (' + esc(j.period) + ')' : ''}</h3>
+        <p class="muted small">First-ever order in the selected month. Repeat orders never count again.</p>` +
+        `<table class="grid"><tr><th>Customer</th><th>Customer ID</th><th>First Order Date</th><th>First Order Qty</th><th>First Order ID</th></tr>${j.data.map((r) => `<tr><td>${esc(r.ledger_name)}</td><td>${esc(r.ledger_id)}</td><td>${esc(r.first_order_date || '')}</td><td>${r.first_order_qty ?? ''}</td><td>${esc(r.first_order_id || '')}</td></tr>`).join('')}</table>`;
+    } else if (kind === 'mom') {
+      const j = await api.get(`/reports/mom?month=${$('#r-month').value}&cmp=${$('#r-cmp').value || ''}`);
+      const d = j.data[0];
+      out.innerHTML = periodHead(d.display) + varHead(d.p1_label, d.p2_label, 'Total') + varRow(d, `${esc(d.p2_label)} vs ${esc(d.p1_label)}`) + `</table>`;
+    } else if (kind === 'mom-ledger') {
+      const j = await api.get(`/reports/mom-ledger?month=${$('#r-month').value}&cmp=${$('#r-cmp').value || ''}`);
+      out.innerHTML = periodHead(j.display) + `<p class="muted small">${j.data.length} customers — how each changed.</p>` + varHead(j.p1_label, j.p2_label, 'Customer') +
+        j.data.slice(0, 300).map((r) => varRow(r, r.ledger_name)) + `</table>`;
+    } else if (kind === 'qoq') {
+      const q = new URLSearchParams({ year: $('#r-year').value, quarter: $('#r-q').value, cmp_year: $('#r-cyear').value, cmp_quarter: $('#r-cq').value });
+      const j = await api.get('/reports/qoq?' + q.toString());
+      const d = j.data[0];
+      out.innerHTML = periodHead(d.display) + varHead(d.p1_label, d.p2_label, 'Total') + varRow(d, `${esc(d.p2_label)} vs ${esc(d.p1_label)}`) + `</table>`;
+    } else if (kind === 'qoq-ledger') {
+      const q = new URLSearchParams({ year: $('#r-year').value, quarter: $('#r-q').value, cmp_year: $('#r-cyear').value, cmp_quarter: $('#r-cq').value });
+      const j = await api.get('/reports/qoq-ledger?' + q.toString());
+      out.innerHTML = periodHead(j.display) + `<p class="muted small">${j.data.length} customers — how each changed (Indian FY quarters).</p>` + varHead(j.p1_label, j.p2_label, 'Customer') +
+        j.data.slice(0, 300).map((r) => varRow(r, r.ledger_name)) + `</table>`;
+    } else if (kind === 'followup') {
+      const j = await api.get('/reports/followup');
+      if (j.enabled === false) { out.innerHTML = '<p class="muted">Reminders disabled in Settings.</p>'; return; }
+      out.innerHTML = `<p class="muted">Weekly: 2 days early · 15-day: 5 days early · Monthly: 6 days early (Settings).</p>
+        <table class="grid"><tr><th>Customer</th><th>Cycle</th><th>Last Order</th><th>Avg Gap</th><th>Remind On</th><th>Status</th></tr>
+        ${j.data.slice(0, 200).map((r) => `<tr><td>${esc(r.ledger_name)}</td><td>${esc(r.cycle)}</td><td>${esc(r.last_order_date)}</td><td>${r.avg_gap_days}</td><td>${esc(r.remind_on)}</td><td>${r.reminder_due ? '<b>Reminder Due</b>' : esc(r.status)}</td></tr>`).join('')}</table>`;
+    } else if (kind === 'not-ordered') {
+      const j = await api.get(`/reports/not-ordered?month=${$('#r-mth').value}`);
+      out.innerHTML = `<p><b>${j.total}</b> customers without orders in ${esc(j.month)}.</p>` +
+        `<table class="grid"><tr><th>Ledger ID</th><th>Name</th><th>Terms</th></tr>${j.data.map((r) => `<tr><td>${esc(r.ledger_id)}</td><td>${esc(r.ledger_name)}</td><td>${esc(r.payment_type)}</td></tr>`).join('')}</table>`;
+    }
+  } catch (e) { out.innerHTML = `<p class="err">${esc(e.message)}</p>`; }
+}
+
+// ---------- bulk upload (Delivered / Customers / Products) ----------
+const BULK_TITLES = { delivered: 'Delivered Orders', customers: 'Customer Data', products: 'Product Data', orders: 'Order Upload' };
+function bulkModal(target, onDone) {
+  openModal(`<h3>Bulk Upload — ${BULK_TITLES[target]}</h3>
+    <p class="muted small">Validate → Preview → Confirm. IDs left blank are generated by the system. Dates accept DD-MM-YYYY, YYYY-MM-DD or Excel dates.${target === 'delivered' ? ' New Customer/Ledger names are created automatically (blend approval added too). Only Blend must already exist as a product.' : ''}</p>
+    <div style="display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap">
+      <button class="ghost" id="bk-tpl">Download ${BULK_TITLES[target]} Template</button>
+      <input type="file" id="bk-file" accept=".csv">
+    </div>
+    <div class="err" id="bk-err"></div><div id="bk-prev"></div>
+    <div style="margin-top:12px;display:flex;gap:8px;align-items:center"><button class="primary" id="bk-go">SAVE</button>
+    <span class="muted small" id="bk-save-note"></span>
+    <button class="ghost" id="bk-cancel">Cancel</button></div>`);
+  $('#bk-cancel').addEventListener('click', closeModal);
+  let stagedCsv = null;
+  // Authenticated download: plain <a> links carry no token, so fetch with it.
+  $('#bk-tpl').addEventListener('click', async () => {
+    try {
+      const r = await fetch(`/api/import/template/${target}`, {
+        headers: { Authorization: 'Bearer ' + api.token },
+      });
+      if (!r.ok) throw new Error('Download failed. Please log in again.');
+      const blob = await r.blob();
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `${target}-template.csv`;
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+    } catch (e) { $('#bk-err').textContent = e.message; }
+  });
+  $('#bk-file').addEventListener('change', () => {
+    const f = $('#bk-file').files[0];
+    if (!f) return;
+    const rd = new FileReader();
+    rd.onload = async () => {
+      stagedCsv = String(rd.result);
+      try {
+        const j = await api.post('/import/preview', { target, csv: stagedCsv });
+        const s = { valid: 0, invalid: 0, duplicates: 0 };
+        j.data.rows.forEach((r) => { if (r.status === 'valid' || r.status === 'valid_with_warnings') s.valid++; else if (r.status === 'invalid') s.invalid++; else s.duplicates++; });
+        const en = (r) => {
+          const bits = [];
+          (r.matched || []).forEach((m) => bits.push(`${esc(m.field)}: "${esc(m.uploaded)}" → "${esc(m.matched_to)}" (${esc(m.status)})`));
+          if (r.enriched) {
+            if (r.enriched.new_customer) bits.push(`new customer ${esc(r.enriched.new_customer)} (auto ID)`);
+            if (r.enriched.route_from_master) bits.push(`Route → ${esc(r.enriched.route)} (from master)`);
+            if (r.enriched.route_day_from_master) bits.push(`Route Day → ${esc(r.enriched.route_day)} (from master)`);
+            if (r.enriched.order_date) bits.push(`date → ${esc(r.enriched.order_date)}`);
+          }
+          return bits.length ? `<br><span class="muted">${bits.join(' · ')}</span>` : '';
+        };
+        const matchedCol = (r, field, uploaded) => {
+          const m = (r.matched || []).find((x) => x.field === field);
+          return m ? esc(m.matched_to) : esc(uploaded || '');
+        };
+        const upCust = (r) => esc((r.row || {})['Ledger Name'] || (r.row || {}).ledger_name || '');
+        const upBlend = (r) => esc((r.row || {})['Blend Name'] || (r.row || {}).blend || '');
+        const upQty = (r) => esc((r.row || {}).Qty ?? (r.row || {}).qty ?? '');
+        const isOrderish = target === 'orders' || target === 'delivered';
+        const head = isOrderish
+          ? `<tr><th>Row</th><th>Uploaded Customer</th><th>Matched Customer</th><th>Uploaded Blend</th><th>Matched Blend</th><th>Qty</th><th>Status</th><th>Reason</th></tr>`
+          : `<tr><th>Row</th><th>Status</th><th>Issues</th></tr>`;
+        const bodyRows = j.data.rows.map((r) => isOrderish
+          ? `<tr><td>${r.rowNum}</td><td>${upCust(r)}</td><td>${matchedCol(r, 'Ledger Name', (r.row || {})['Ledger Name'])}</td><td>${upBlend(r)}</td><td>${matchedCol(r, 'Blend Name', (r.row || {})['Blend Name'])}</td><td>${upQty(r)}</td><td>${esc(r.status)}</td><td>${esc(r.issues.join('; '))}${en(r)}</td></tr>`
+          : `<tr><td>${r.rowNum}</td><td>${esc(r.status)}</td><td>${esc(r.issues.join('; '))}${en(r)}</td></tr>`).join('');
+        $('#bk-prev').innerHTML = `<p>Will be added: <b>${s.valid}</b> · Duplicates (will not be saved): <b>${s.duplicates}</b> · Rejected: <b>${s.invalid}</b> · Total: <b>${j.data.rows.length}</b></p>
+          <table class="grid">${head}${bodyRows}</table>`;
+        const saveBtn = $('#bk-go'), note = $('#bk-save-note');
+        if (s.valid > 0) {
+          saveBtn.disabled = false;
+          note.textContent = `${s.valid} valid row(s) will be saved. Duplicates/invalid are skipped with reasons shown above.`;
+        } else {
+          saveBtn.disabled = true;
+          note.textContent = s.duplicates > 0 && s.invalid === 0
+            ? 'No valid rows to save — every row is a duplicate (see reasons).'
+            : 'No valid rows to save — fix the file or add the missing masters, then upload again.';
+        }
+      } catch (e) { $('#bk-err').textContent = e.message; }
+    };
+    rd.readAsText(f);
+  });
+  $('#bk-go').addEventListener('click', async () => {
+    const btn = $('#bk-go');
+    btn.disabled = true; // no double-SAVE
+    btn.textContent = 'Saving…';
+    try {
+      const j = await api.post('/import/confirm', { target, csv: stagedCsv });
+      const counts = {};
+      (j.data || []).forEach((r) => { counts[r.status] = (counts[r.status] || 0) + 1; });
+      openModal(`<h3>Upload Complete</h3>
+        <p>${esc(j.message)}</p>
+        <table class="grid"><tr><th>Row</th><th>Status</th><th>Detail</th></tr>
+        ${(j.data || []).map((r) => `<tr><td>${r.row}</td><td>${esc(r.status)}</td><td>${esc(r.reason || r.order_id || r.ledger_id || r.sku_id || '')}</td></tr>`).join('')}</table>
+        <div style="margin-top:12px"><button class="primary" id="bk-done">Done</button></div>`);
+      $('#bk-done').addEventListener('click', () => { closeModal(); onDone(); });
+    } catch (e) {
+      $('#bk-err').textContent = e.message;
+      btn.disabled = false; btn.textContent = 'SAVE';
+    }
+  });
+}
+
+// ---------- settings ----------
+async function vSettings() {
+  const v = $('#view');
+  const isAdmin = api.user && api.user.role === 'admin';
+  v.innerHTML = `<div class="card"><h2>Settings</h2><div id="s-body">Loading…</div></div>`;
+  const body = $('#s-body');
+  try {
+    const j = await api.get('/settings');
+    const s = j.data[0];
+    const ro = (k, label, type = 'text') => `
+      <label style="display:block;font-size:13px;margin:8px 0">${label}
+      <input data-k="${k}" type="${type}" value="${esc(s[k] || '')}" style="width:100%;padding:8px;margin-top:4px" ${isAdmin ? '' : 'disabled'}></label>`;
+    body.innerHTML = `
+      <h3>Company</h3>
+      ${ro('company_name', 'Company Name')}
+      <label style="display:block;font-size:13px;margin:8px 0">Company Logo (PNG/JPG, max ~250KB)
+      <span id="logo-prev">${s.company_logo ? `<img src="${s.company_logo}" style="height:40px;display:block">` : '<span class="muted">No logo</span>'}</span>
+      <input type="file" id="s-logo" accept=".png,.jpg,.jpeg,image/png,image/jpeg" ${isAdmin ? '' : 'disabled'}></label>
+      <h3>Billing Email (auto 10:00 AM, only new lines)</h3>
+      ${ro('billing_email_enabled', 'Enabled (yes/no)')}
+      ${ro('billing_email_recipients', 'Recipients (comma-separated)')}
+      ${ro('billing_email_subject', 'Subject (use {date})')}
+      <h3>EOD Email (auto 6:00 PM, skipped Sundays & holidays)</h3>
+      ${ro('eod_email_enabled', 'Enabled (yes/no)')}
+      ${ro('eod_email_recipients', 'Recipients (comma-separated)')}
+      ${ro('eod_email_subject', 'Subject (use {date})')}
+      <h3>Email Sending (SMTP)</h3>
+      ${ro('smtp_host', 'SMTP Host — server name like smtp.gmail.com (NOT an email ID)')}
+      ${ro('smtp_port', 'SMTP Port (587, or 465 for SSL)')}
+      ${ro('smtp_user', 'SMTP Username (usually your email ID)')}
+      <label style="display:block;font-size:13px;margin:8px 0">SMTP Password (blank keeps existing)<input data-k="smtp_pass" type="password" value="" style="width:100%;padding:8px;margin-top:4px" ${isAdmin ? '' : 'disabled'}></label>
+      <p class="muted small">For Gmail use an App Password, not your login password. Billing sends 10:00 AM (new lines only); EOD 6:00 PM (skipped Sundays & holidays). The server must be running at those times.</p>
+      ${isAdmin ? `<div style="display:flex;gap:8px;margin:8px 0;flex-wrap:wrap">
+        <button class="ghost" id="t-bill">Send Test Billing Email</button>
+        <button class="ghost" id="t-eod">Send Test EOD Email</button>
+        <button class="ghost" id="t-status">Scheduler Status</button></div><div id="t-out"></div>` : ''}
+      <h3>Follow-up Reminders</h3>
+      ${ro('reminders_enabled', 'Enabled (yes/no)')}
+      ${ro('reminder_weekly_days', 'Weekly — days early', 'number')}
+      ${ro('reminder_fortnight_days', '15-day — days early', 'number')}
+      ${ro('reminder_monthly_days', 'Monthly — days early', 'number')}
+      ${isAdmin ? '<button class="primary" id="s-save">Save Settings</button>' : '<p class="muted">Only admins can change settings.</p>'}`;
+    if (!isAdmin) return;
+    let logoData = null;
+    const tOut = (html) => { const el = $('#t-out'); if (el) el.innerHTML = html; };
+    const tBill = $('#t-bill'), tEod = $('#t-eod'), tStatus = $('#t-status');
+    if (tBill) tBill.addEventListener('click', async () => {
+      tOut('Sending…');
+      try { const j = await api.post('/settings/test-email', { kind: 'billing' }); tOut(`<p>${esc(j.message)}</p>`); }
+      catch (e) { tOut(`<p class="err">${esc(e.message)}</p>`); }
+    });
+    if (tEod) tEod.addEventListener('click', async () => {
+      tOut('Sending…');
+      try { const j = await api.post('/settings/test-email', { kind: 'eod' }); tOut(`<p>${esc(j.message)}</p>`); }
+      catch (e) { tOut(`<p class="err">${esc(e.message)}</p>`); }
+    });
+    if (tStatus) tStatus.addEventListener('click', async () => {
+      try {
+        const j = await api.get('/settings/email-status');
+        const d = j.data[0];
+        tOut(`<p class="muted small">Server time: ${esc(d.now)}</p>
+          <table class="grid"><tr><th>Time</th><th>Event</th><th>Detail</th></tr>
+          ${(d.recent || []).map((r) => `<tr><td>${esc(r.ts)}</td><td>${esc(r.action)}</td><td>${esc(r.record_id || '')}</td></tr>`).join('') || '<tr><td colspan="3">No email activity yet.</td></tr>'}</table>`);
+      } catch (e) { tOut(`<p class="err">${esc(e.message)}</p>`); }
+    });
+    $('#s-logo').addEventListener('change', () => {
+      const f = $('#s-logo').files[0];
+      if (!f) return;
+      if (!/^image\/(png|jpeg)$/.test(f.type)) { alert('Logo must be PNG or JPG.'); return; }
+      const rd = new FileReader();
+      rd.onload = () => {
+        logoData = String(rd.result);
+        $('#logo-prev').innerHTML = `<img src="${logoData}" style="height:40px">`;
+      };
+      rd.readAsDataURL(f);
+    });
+    $('#s-save').addEventListener('click', async () => {
+      const pairs = {};
+      body.querySelectorAll('input[data-k]').forEach((x) => { pairs[x.dataset.k] = x.value; });
+      if (logoData) pairs.company_logo = logoData;
+      try {
+        await api.put('/settings', pairs);
+        toast('Settings saved'); applyBranding();
+      } catch (e) { alert(e.message); }
+    });
+  } catch (e) { body.innerHTML = `<p class="err">${esc(e.message)}</p>`; }
+}
+
+// ---------- holidays ----------
+async function vHolidays() {
+  const v = $('#view');
+  v.innerHTML = `<div class="card"><h2>Holiday Master</h2>
+    <div class="toolbar"><input id="h-date" type="date"><input id="h-name" placeholder="Holiday name" size="24">
+    <input id="h-type" placeholder="Type (National/State)" size="18"><button class="primary" id="h-add">Add</button></div>
+    <div id="h-tbl"></div></div>`;
+  $('#h-add').addEventListener('click', async () => {
+    try { await api.post('/holidays', { date: $('#h-date').value, name: $('#h-name').value, type: $('#h-type').value }); toast('Holiday saved'); vHolidays(); }
+    catch (e) { alert(e.message); }
+  });
+  const j = await api.get('/holidays');
+  $('#h-tbl').innerHTML = `<table class="grid"><tr><th>Date</th><th>Name</th><th>Type</th><th></th></tr>
+    ${j.data.map((h) => `<tr><td>${esc(h.date)}</td><td>${esc(h.name)}</td><td>${esc(h.type || '')}</td>
+    <td><button class="danger small" data-d="${esc(h.date)}">Remove</button></td></tr>`).join('')}</table>`;
+  $('#h-tbl').querySelectorAll('button').forEach((b) => b.addEventListener('click', async () => {
+    if (!confirm(`Remove holiday ${b.dataset.d}?`)) return;
+    await api.del(`/holidays/${b.dataset.d}`); toast('Holiday removed'); vHolidays();
+  }));
+}
+
+$('#login-btn').addEventListener('click', doLogin);
+$('#login-pass').addEventListener('keydown', (e) => { if (e.key === 'Enter') doLogin(); });
+$('#logout-btn').addEventListener('click', logout);
+if (api.token) boot();
+
+</script>
+
+</body>
+</html>

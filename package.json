@@ -1,0 +1,23 @@
+{
+  "name": "coffee-erp-order-tracker-live",
+  "version": "1.0.0",
+  "description": "Coffee ERP / Order Management Web Application — production build",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "compression": "^1.8.2",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "nodemailer": "^6.10.1",
+    "sqlite3": "^6.0.1"
+  }
+}

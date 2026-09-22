@@ -1,0 +1,4245 @@
+{
+ "customers": [
+  {
+   "ledger_id": "CUS960614",
+   "ledger_name": "1 Percent Circle Private Limited",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Ground Floor No. 40 SY 21 &22 Ambalipura, Village Varthur Hobli -560102, Contact Person:Sachin, Contact No:8861731077",
+   "route": "7",
+   "route_day": "WED",
+   "payment_type": "Advance",
+   "mobile": "8861731077",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS397954",
+   "ledger_name": "7 Flavours Foods and Beverages",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "No.963/1, 11th Main Road, Old Railway Colony,, Near Tata Nagar, Nisarga Complex, RMV Post,, Bengaluru, Bengaluru Urban, Karnataka, 560094, Contact Person:Mr.Shameer, Contact No.:9745287821",
+   "route": "2",
+   "route_day": "TUE/THU/SAT",
+   "payment_type": "Credit",
+   "mobile": "9745287821",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS440269",
+   "ledger_name": "Arjun (Smok Cafe)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Saravana Bhavan big smoke cafe,hosur blr, karnataka-635109, Contact Person:Arjun, Contact No:8870058114",
+   "route": "Transport",
+   "route_day": null,
+   "payment_type": "Advance",
+   "mobile": "8870058114",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS355263",
+   "ledger_name": "Art Of Delight",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "firdous complex, art of delight, no.44/1,, residency road, bangalore 560025, Contact Person:Nishat Abbas, Contact No:8217353561",
+   "route": "8",
+   "route_day": "Daily",
+   "payment_type": "Advance",
+   "mobile": "8217353561",
+   "city": null,
+   "area": "MG Road"
+  },
+  {
+   "ledger_id": "CUS609474",
+   "ledger_name": "Asha Sweet Center",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "#88,10th cross,Temple Road, Malleshwaram, Bangalore-560003, phno:9886461638",
+   "route": "1",
+   "route_day": "TUE/THU/SAT",
+   "payment_type": "Credit",
+   "mobile": "9886461638",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS290808",
+   "ledger_name": "AUBREE LE CHOCOLATIER",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "307, THIMMAIAH ROAD, BANGALORE-560052, Contact Person:Selvam, Contact No:7760702277",
+   "route": "8",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": "7760702277",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS634488",
+   "ledger_name": "Back Post",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "No. 10, Shivasai Plaza, Caremalaram post,, Hadosiddapura Village, Bengaluru-560035, Contact Person:Lakshmi, Contact No:9902267606",
+   "route": "7",
+   "route_day": "WED",
+   "payment_type": "Advance",
+   "mobile": "9902267606",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS402034",
+   "ledger_name": "BEAMER FOOD AND BEVERAGES PRIVATE LIMITED",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "#48 ,2nd Cross, Shanthipura, ELECTRONIC CITY 2nd Stage,, Bengaluru -560100, Contact Person:Chandan, Contact No:7259815599",
+   "route": "Porter",
+   "route_day": "Daily",
+   "payment_type": "Advance",
+   "mobile": "7259815599",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS727458",
+   "ledger_name": "Bliss Chocolate India Pvt Ltd",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Survey No.56/6, Old Survey No.56/1A,, Serial No 32,Avalahalli Village, Bidarahalli Hobli,, Bangalore East Taluk, Karnataka, 560049, Contact Person :Rajkumar, Ph -080-46632222",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": null,
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS461971",
+   "ledger_name": "Blossom Café",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "No.354,Beside,Nayarana Petrol Pump Gutturu, Village, Penukonda Mandal, Anantapur, Distict - 515164, Contact Person:Mr.Sai, Contact No:8639369135",
+   "route": "Transport",
+   "route_day": "Daily",
+   "payment_type": "Advance",
+   "mobile": "8639369135",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS713406",
+   "ledger_name": "Book Mark Office Automation",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "No 151 3rd Main Road, 184 Block Kormangala, Lakkasandra Bangalore - 560034, Contact Person:Meeth Patel, Ph No:8296077620",
+   "route": "3",
+   "route_day": "MON/THU",
+   "payment_type": "Advance",
+   "mobile": "8296077620",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS661610",
+   "ledger_name": "Brew Cafe",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "BTM, Bangalore",
+   "route": "3",
+   "route_day": "WED /SAT",
+   "payment_type": "Credit",
+   "mobile": null,
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS413966",
+   "ledger_name": "Brewing Beans",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "New to Udupi Kitchen Site No-220,712/724/740/220,, Grean Glen,LayoutVarthur Hobli Bellandur-560103, Contact Person:Gurucharan, Contact No:9348245619",
+   "route": "NSK",
+   "route_day": "TUE",
+   "payment_type": "Advance",
+   "mobile": "9348245619",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS165761",
+   "ledger_name": "Cafe' Mondo (B N) - PL",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Basavanagudi, Bangalore - 560004, Contact Person : Manu, Contact No., : 080 42088686",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": null,
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS247766",
+   "ledger_name": "Centre for Cellular and Molecular Platforms (C-Camp)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "GKVK Road, Bellary Road, Bangalore-560065, CONTACT PERSON : Mr. Ranjith, PH NO : 7892567446",
+   "route": "4",
+   "route_day": "FRI",
+   "payment_type": "Credit",
+   "mobile": "7892567446",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS181661",
+   "ledger_name": "Cruffins Foods(OPC)Private Limited",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "no.35,flat no c-2,3rd floor,2nd c main ,, b.channasandra,east of ngef layout ,, kasturinagar,bangalore-560043, contact person : Mr sandeep, ph no : 9538973471",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Advance",
+   "mobile": "9538973471",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS330339",
+   "ledger_name": "Evya Cafe",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Vivekananda Divya basment floor no 150, vishwa bharati house buliding layout, giri nagar bsk stage 3 rd stage blr-560085, Contact Person:Divya, Contact No:9611407848",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Advance",
+   "mobile": "9611407848",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS500946",
+   "ledger_name": "Eywa",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "3786, 13th Cross, Banashankari 2nd Stage, Banashankari, Bengaluru, Karnataka 560070",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Advance",
+   "mobile": null,
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS430511",
+   "ledger_name": "Filter Cafe and Kitchen",
+   "status": "Inactive",
+   "emp_name": "Prasanth",
+   "address": "355/47/2 356/47/5, Mayaganahalli,, Kasaba, Madapura, Ramanagara, Karnataka, 562128, Contact No:8951492971",
+   "route": "NSK",
+   "route_day": "THU",
+   "payment_type": "Credit",
+   "mobile": "8951492971",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS645357",
+   "ledger_name": "Funzey Cafe",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Near Ragigudda Metro Station, 46th Cross Rd, beside Naarithva, 5th Block, Jayanagar, Bengaluru, Karnataka 560041",
+   "route": "3",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": "7204077741",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS785816",
+   "ledger_name": "HOUSE OF APAKAH LLP",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "No 1/1-1, North Park Road, Bengaluru,Karnataka, 560001, Contact No:9845083676",
+   "route": "2",
+   "route_day": null,
+   "payment_type": "Advance",
+   "mobile": "9845083676",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS436942",
+   "ledger_name": "HUNGERAVENUE INDIA PRIVATE LIMITED",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Ground Floor, NO 343/280/1-1, Bethal Nagar,K R Pura,, Basavnapura, Bengaluru, 560049, Contact Person:Jagriti, Contact No:8050545551",
+   "route": "Parcel",
+   "route_day": null,
+   "payment_type": "Advance",
+   "mobile": "8050545551",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS484389",
+   "ledger_name": "India CKP Consultants Pvt Ltd",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "No.23, 1st Floor, KPTCL Lay out Road,OPP.HNR, Industrial Estate, Kasavanahalli,Off.Sarjapur, Road Bengaluru-560035, Email Id:roselin@ckphospitality.com, Contact Person:Ms. Roselin Joseph, Contact No:7022580089",
+   "route": "7",
+   "route_day": "WED",
+   "payment_type": "Credit",
+   "mobile": "7022580089",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS441148",
+   "ledger_name": "Iruve Bake & Brew",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "NO 52,100 ft road,defence colony,indiranagar, bengaluru-560038, Contact Person:Karthik, Contact No:9844271404",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "payment_type": "Advance",
+   "mobile": "9844271404",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS340382",
+   "ledger_name": "iTREE DYNAMICS SOLUTIONS PRIVATE LIMITED",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "2rd Floor, Benaka Towers, 7, Subramanyapura Rd, RR Layout, Padmanabhanagar, Bengaluru, Karnataka 560061",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": "9900311316",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS997703",
+   "ledger_name": "Kafe Viva - Doddakallsandra",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Kafe Viva, No 119/1, 7th mile, Kanakapura Road,, Dodkallsandra, Bengaluru, 560062, Contact Person:Mr.Subbanna, Contact No.:8800933682, Email Id:subbannakannur@gmail.com",
+   "route": "3",
+   "route_day": "FRI",
+   "payment_type": "Credit",
+   "mobile": "8800933682",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS113211",
+   "ledger_name": "Kerbside Bistro",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Sadashivnagar, Near Sankytanky road, Bangalore",
+   "route": "1",
+   "route_day": "TUE/THU/SAT",
+   "payment_type": "Advance",
+   "mobile": null,
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS447425",
+   "ledger_name": "Krafty Foods",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "NO 536, Near Ayyappaswamy Temple, Bannergatta, Road, Vijaya Bank Layout, Bengaluru- 560076, Contact Person : Ms.Sulochana, Contact No : 9535290344",
+   "route": "Parcel",
+   "route_day": null,
+   "payment_type": "Advance",
+   "mobile": "9535290344",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS531898",
+   "ledger_name": "KSIIDC",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "4th Floor, Khanija Bhavan, 49, Race Course Rd, Racecourse, East Wing, Bengaluru, Karnataka 560001",
+   "route": "8",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": null,
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS571277",
+   "ledger_name": "LEXUS/MOTORWORLD PRIVATE LIMITED - P L",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "LEXUS BANGALORE SKAV 909,, NO.9/1, RICHMOND CIRCLE, BANGALORE - 560001",
+   "route": "8",
+   "route_day": "THU",
+   "payment_type": "Credit",
+   "mobile": null,
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS474210",
+   "ledger_name": "MAHESH ENTERPRISES",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Melt in cafe,Sy no 44, Madapura Gate,, Mayaganahalli, Ramanagara,562128\n \n , Contact Person:Mahesh, Contact No:9916329333",
+   "route": "NSK",
+   "route_day": "THU",
+   "payment_type": "Credit",
+   "mobile": "9916329333",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS345727",
+   "ledger_name": "MI PI Pizzeria",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Near Muneshwara Swamy Temple,Doddabele,, Kengeri, Bengaluru, Karnataka 560060, Contact Person:Ms. Sunita, Contact No:44 7828 023353",
+   "route": "NSK",
+   "route_day": "WED",
+   "payment_type": "Credit",
+   "mobile": null,
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS218824",
+   "ledger_name": "MIKACHA BAKSHANAM VENTURES PRIVATE LIMITED",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "WorkFlo Ranka Junction,NO. 224, 3RD FLOOR,, #80/3, VIJINAPUR VILLAGE OLD MADRAS ROAD,, KRPURAM, BENGALURU – 560016, Contact Person:Sreehari, Contact No:7760832308",
+   "route": "Porter",
+   "route_day": "Daily",
+   "payment_type": "Advance",
+   "mobile": "7760832308",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS997701",
+   "ledger_name": "Milano Foods Pvt Ltd (Warehouse 2)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Ground Floor, 12, Bhoopasandra Main Rd, Vijay Nagar, Bhoopasandra, R.M.V. 2nd Stage, Bengaluru, Karnataka 560094",
+   "route": "2",
+   "route_day": "THU",
+   "payment_type": "Credit",
+   "mobile": null,
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS452523",
+   "ledger_name": "Milano Ice Cream - BEL Road - P L",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "New BEL Road, Bangalore, Contact Person:Gianerla Seglini, Phno:8281464593",
+   "route": "2",
+   "route_day": "TUE/THU/SAT",
+   "payment_type": "Credit",
+   "mobile": "8281464593",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS761537",
+   "ledger_name": "Milano Ice Cream - P L",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "#460,2nd Cross,Krishna Temple Road,, Indiranagar,1st Stage,Bangalore-560038, Contact Person:Gianerla Seglini, Phno:8281464593",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "payment_type": "Credit",
+   "mobile": "8281464593",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS300113",
+   "ledger_name": "Milano Ice Cream Pvt Ltd",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "460, 2nd Cross, Krishna Temple Road, Binnamangala I Stage, Bengaluru Urban,, Karnataka, 560038, Contact Person:Mr. Ramji, Contact No:9686756914",
+   "route": "3",
+   "route_day": "MON/THU",
+   "payment_type": "Credit",
+   "mobile": "9686756914",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS104275",
+   "ledger_name": "Milano Ice Cream Pvt Ltd - Embassy Food Court",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "640,2nd Cross,Krishna Temple Road,Binnamangala, 1st Stage,Bangalore Urban,Karnataka - 560038, Contact Person:Mr.Krishna, Contact No:7019507565",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "payment_type": "Credit",
+   "mobile": "7019507565",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS528408",
+   "ledger_name": "Milano Ice Cream Pvt Ltd - Kalyan Nagar",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Ground floor 702, 3rd Cross Road HRBR Layout, Kalyan Nagar Bangalore - 560043, Contact Person:Mr.Mandal, Contact No.:9995215630",
+   "route": "2",
+   "route_day": "MON/WED/FRI",
+   "payment_type": "Credit",
+   "mobile": "9995215630",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS147049",
+   "ledger_name": "Milano ice cream pvt ltd(indiranagar)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "509,Ground Floor,Bangalore 1st stage,CMH Road,, Indira Nagar,BBMP East,Bangalore,Karnataka-560038, Contact Person:Mr.Mandal, Contact No.:7585050542",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "payment_type": "Credit",
+   "mobile": "7585050542",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS514925",
+   "ledger_name": "Milano22 Foods Pvt Ltd",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Koshys Bar and Restorent, Ground floor-1, Sonja,No.50, St.Marks Road, Shantala Nagar,, Bengaluru Urban, Karnataka,560001, Contact Person : Arafath, PH :9567724664",
+   "route": "8",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": "9567724664",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS678901",
+   "ledger_name": "Milano22 Foods Pvt Ltd - Brookfield",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Ground floor,1 Sobha,No.50,St.Marks Road,, Shanthala Nagar,Bengaluru - 560001, Contact Person:Mr.Harshad, Contact No:9037630287",
+   "route": "Parcel",
+   "route_day": "wed",
+   "payment_type": "Credit",
+   "mobile": "9037630287",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS997700",
+   "ledger_name": "Milano22 Foods Pvt Ltd (Warehouse)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Ground Floor, 12, Bhoopasandra Main Rd, Vijay Nagar, Bhoopasandra, R.M.V. 2nd Stage, Bengaluru, Karnataka 560094",
+   "route": "2",
+   "route_day": "THU",
+   "payment_type": "Credit",
+   "mobile": null,
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS784402",
+   "ledger_name": "Mirah Hospitality & Gourmet Solutions Private Limited",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "GST NO. 29AAKCM4321P1ZX, No 2/4, Ground Floor, 1st Main Road, 2nd Cross, Suddagunta Palya, DRC Post, Ward No 152,Bangalore- 560029, ,",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Advance",
+   "mobile": "8010569565",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS880689",
+   "ledger_name": "MZAI Hospitality LLP",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Mur Mur Cafe ,CAFE INDIRANAGAR NO 33, 2ND Main road 12th cross binnamanagala, Contact Person:Naga murthy, Contact No.:7899512951",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "payment_type": "Advance",
+   "mobile": "7899512951",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS748726",
+   "ledger_name": "NKP EMPIRE VENTURES PRIVATE LIMITED",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Empier central store mosque road 34 mosque, rd pulikeshi nagar bangalore 560065, Contact Person:Intiyaz, Contact No:7026610045",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "payment_type": "Credit",
+   "mobile": "7026610045",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS798928",
+   "ledger_name": "NTS NIRVANA SUITES",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "0, No.3974, 0, 4th phase VBHCS Girinagar, Banashankari, Stage 3, Bengaluru-560085, Contact No:9387004762",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": "9387004762",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS997698",
+   "ledger_name": "oswal minerals ltd",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Rajkumar Road, Rajajinagar, Bangalore",
+   "route": "1",
+   "route_day": "TUE/THU/SAT",
+   "payment_type": "Credit",
+   "mobile": null,
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS424418",
+   "ledger_name": "Pasta Street",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Ground Floor, No. 37/2, Chicago Avenue, Cunnigham, Road, Bangalore - 560052, +91 93653 08830",
+   "route": "8",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": null,
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS500848",
+   "ledger_name": "Pasta Street - J P Nagar",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Municipal No.74, 15th Cross,, JP Nagar 3rd Phase, Bangalore-560078, Contact Person - Bhavik, Ph no. 9901912405",
+   "route": "3",
+   "route_day": "TUE/SAT",
+   "payment_type": "Credit",
+   "mobile": "9901912405",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS103667",
+   "ledger_name": "Pasta Street (Indiranagar)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "#2022, 1st Floor, 100feet Road, Bangalore-560038, Contact person : Mr.Bhavik, Ph: 9901912405",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "payment_type": "Credit",
+   "mobile": "9901912405",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS989278",
+   "ledger_name": "Pasta Street India Pvt Ltd - Sahakaranagar",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "1st Floor, Sy No 40/1, Century Corbel, Sahakar Nagar Main road 60ft road,, Bruker India,Scientific Pvt Ltd, Byatarayanapura, Bengaluru,, Bengaluru Urban, Karnataka, 560092, Contact person : Mr.Bhavik, Ph no. 9901912405",
+   "route": "2",
+   "route_day": "TUE/THU/SAT",
+   "payment_type": "Credit",
+   "mobile": "9901912405",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS522978",
+   "ledger_name": "Pasta Street India Pvt Ltd - Sarjapura",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "1st Floor, S K Arcade, Sy33/1,, Sarjapur Main Rd, Carmelaram,Someshwara, Layout, Doddakannelli, Bengaluru, Karnataka 560035, Contact Person:Mr.Subhrakanth Barik, Contact No:7022770913, accounts@pastastreet.co.in",
+   "route": "Parcel",
+   "route_day": "WED",
+   "payment_type": "Credit",
+   "mobile": "7022770913",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS146412",
+   "ledger_name": "Pasta Street India Pvt Ltd - Varthur",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "6th Floor, 28, Sai Sunrise, 3rd Main Road,, Ashiwini Layout off inner ring road, Ejipura,, Bengaluru, Bengaluru Urban, Karnataka, 560047, Ph :9901912405",
+   "route": "NSK",
+   "route_day": "TUE",
+   "payment_type": "Credit",
+   "mobile": "9901912405",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS970842",
+   "ledger_name": "Pasta Street India Pvt Ltd - Whitefield",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "222/220/A, ITPL Main Road,Opp. Prestige Shantiniketan,, ,KIADB Export Promotion Industrial Area, Whitefield, Bangalore -560048, Contact Person : Mr. Bhavik, Contact No. : 9901912405",
+   "route": "NSK",
+   "route_day": "TUE",
+   "payment_type": "Credit",
+   "mobile": "9901912405",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS639117",
+   "ledger_name": "Pasta Street India Pvt Ltd -Koramangala",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "#751, 80th Feet Road, 4th Block,, Kormangala Bangalore - 560034, Contact Person : Mr.Subhrakanth Barik, Ph :7022770913",
+   "route": "3",
+   "route_day": "MON/THU",
+   "payment_type": "Credit",
+   "mobile": "7022770913",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS465542",
+   "ledger_name": "Prarthan Paarth",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "# 319/8,gokul extension pumphouse road,, behind court,anekal,benagaluru-562106, Contact No:8123720284",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Advance",
+   "mobile": "8123720284",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS320044",
+   "ledger_name": "R Kumara Ramaswamy",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Flat 106,anjaneya apartment 58/1,gm palaya, new thippasandra post bangalore-560075, Contact Person:R Kumar Ramaswamy, Contact No:9379318080",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Advance",
+   "mobile": "9379318080",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS380444",
+   "ledger_name": "Raimukk Marketing LLP",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "NO 34, Quahwa Coffee Longe, Pulakesinagar, Sunders street Road Bangalore-560005, Contact Person:Raimuk, Contact No:9590886584",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "payment_type": "Advance",
+   "mobile": "9590886584",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS593950",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd -  Salt UB City",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Level 2,Concorder Block,UB City No.24,, Vittal Mallya Road, Bangalore - 560001, Contact Person : Dinesh T J, Contact No : 9844939302, Email Id : dinesh.t@toscano.co.in",
+   "route": "8",
+   "route_day": "THU",
+   "payment_type": "Credit",
+   "mobile": "9844939302",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS396955",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Bhartiya City (Toscano Classic Type)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Upper Ground Floor,Bhartiya Mall of Bengaluru,, Bhartiya City,Thanisandra Main Road,, Chokkanahalli,Bangalore-560064, Contact Person : Dinesh T J, Contact No. : 9844939302, Email Id : dinesh.t@toscano.co.in",
+   "route": "4",
+   "route_day": "THU",
+   "payment_type": "Credit",
+   "mobile": "9844939302",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS838298",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Hyderabad-Toscano",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Building No. flat no 83/1 in Plot No.2, Cyberabad, Knowledge City, Raidurg Panmaktha Village,, Hyderabad-500081, Contact Person:Mr Sanjay, Contact No:7892233048",
+   "route": "Transport",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": "7892233048",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS761203",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Jayanagar (Toscano Classic Type)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "#359/38,7th Cross,Ashoka Pillar Road,Jayanagar, 1st Block,Near Madhavan Park Circle,Bangalore-560011, Contact Person : Dinesh T J, Contact No. : 9844939302, Email Id : dinesh.t@toscano.co.in",
+   "route": "3",
+   "route_day": "THU/SAT",
+   "payment_type": "Credit",
+   "mobile": "9844939302",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS215946",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Manyata Tech Park",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Unit No.16,Ground Floor,Block NXT Tower 2,Manyata, Business Tech Park,Nagawara,Bangalore-560045, Contact Person : Dinesh T J, Contact No. : 9844939302, Email Id : dinesh.t@toscano.co.in",
+   "route": "NSK",
+   "route_day": "MON/FRI",
+   "payment_type": "Credit",
+   "mobile": "9844939302",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS210909",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Museum Road (Toscano Classic Type)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "#1,The Museum Inn,Museum Road,, Off MG Road,Bangalore-560001, Contact Person : Dinesh T J, Contact No. : 9844939302, Email Id : dinesh.t@toscano.co.in",
+   "route": "8",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": "9844939302",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS706814",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Nexus Koramangala (Toscano Classic Type)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "UnitNo-201,2nd Floor,Nexus Koramangala Mall,, No.21,Hosur Road,Koramangala,Bangalore-560095, Contact Person : Dinesh T J, Contact No. : 9844939302, Email Id : dinesh.t@toscano.co.in",
+   "route": "3",
+   "route_day": "WED/SAT",
+   "payment_type": "Credit",
+   "mobile": "9844939302",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS316558",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Nexus Shantiniketan (Toscano Classic Type)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "U012,Ground Floor,Forum Shantiniketan Mall,, Whitefield Main Road,Thigalarapalya,Hoodi,Bangalore-560048, Contact Person : Dinesh T J, Contact No. : 9844939302, Email Id : dinesh.t@toscano.co.in",
+   "route": "NSK",
+   "route_day": "TUE",
+   "payment_type": "Credit",
+   "mobile": "9844939302",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS426814",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Orion Brigade Mall (Toscano Classic Type)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "26/1,Brigade Gateway,Dr. Rajkumar Road,, Malleswaram, Bangalore-560055, Contact Person : Dinesh T J, Contact No. : 9844939302, Email Id : dinesh.t@toscano.co.in",
+   "route": "1",
+   "route_day": "THU",
+   "payment_type": "Credit",
+   "mobile": "9844939302",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS907841",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Phoenix Market City (Toscano Classic Type)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "UG-28,Phoenix Market City,, Valachery Road,Chennai-600042, Contact Person : Dinesh T J, Contact No. : 9844939302, Email Id : dinesh.t@toscano.co.in",
+   "route": "NSK",
+   "route_day": "TUE",
+   "payment_type": "Credit",
+   "mobile": "9844939302",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS997697",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Toscano Restaurant Chennai",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Delivery address WTC TOSCANO Red Apple kitchen, consultancy pvt Ltd,Toscano Restauran, Brigade World Trade Center 5 142, Rajiv Gandhi, Salai, Tirumalai Nagar, Perungudi, Contact number _ +91 9036972840",
+   "route": "Transport",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": "9036972840",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS554808",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - UB City (Toscano Classic Type)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Level 2,Concorder Block,UB City No.24,, Vittal Mallya Road, Bangalore - 560001, Contact Person : Dinesh T J, Contact No : 9844939302, Email Id : dinesh.t@toscano.co.in",
+   "route": "8",
+   "route_day": "THU",
+   "payment_type": "Credit",
+   "mobile": "9844939302",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS658932",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - UKN Miraya Rose (Toscano Classic Type)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Survey No.66/2,UKN Miraya Rose,Siddapura, Village,Varthur Hobli,Bangalore-560066, Contact Person : Dinesh T J, Contact No. : 9844939302, Email Id : dinesh.t@toscano.co.in",
+   "route": "NSK",
+   "route_day": "TUE",
+   "payment_type": "Credit",
+   "mobile": "9844939302",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS439208",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - VR Mall Chennai (Toscano Collage Type)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "#t143rd floor #44 pillaiyarkovil street, Anna Nagar Chennai pin 600040, Phone 7679923056, ,, ,, ,",
+   "route": "Transport",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": "7679923056",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS706736",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd (Salt-Nexus Mall Shantinketn)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Ground floor,nexus mall shantiniketan hoodi,, whitefield bangalore karnataka-560067, Contact Person:Subha, Contact No:8972587257",
+   "route": "NSK",
+   "route_day": "TUE",
+   "payment_type": "Credit",
+   "mobile": "8972587257",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS725471",
+   "ledger_name": "Reliance Retail Limited (Blr)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "2ND FLOOR, NO 62/2,, RIL BUILDING,, RICHMOND ROAD, BANGALORE-560025, Contact Person:Venkat J, Contact No: 74060 82227",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": null,
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS357077",
+   "ledger_name": "Saleha India",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "245 B, Defence Colony, Sarasawati Vidya Mandir Inter College,, Jajmau, Kanpur, Kanpur Nagar, Uttar Pradesh, 208010, Contact Person:Saleha, Contact No:9793062666",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": "9793062666",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS230583",
+   "ledger_name": "Sanavi Venkatesh(TCB)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "NO T9-9266, PRESTIGE LAKESIDE HABITAT,, VARTHUR MAIN ROAD, Near Varthur Police, Station, GUNJUR VILLAGE, Bengaluru- 560087, Contact No:9394826228",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": "9394826228",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS230940",
+   "ledger_name": "Skyline Office Suppliers",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "\"#258/1/3, Ground Floor, Manjunath Building, Road, Near Chandana Delux,\n Konappana Agrahara,, Electronic City, Bengaluru - 560100'', Contact Person:Mitesh Patel, Contact No:9632390609, Email Id:skylineblr02@gmail.com",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": "9632390609",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS272680",
+   "ledger_name": "Stepier Office Solutions Private Limited",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Ground Floor, No.15, 2nd Phase,, 3rd Main Road,, BDA Colony,, Domlur Village, Bengaluru,, Bengaluru Urban, Karnataka, 560071, Contact Person:Gajendra, Contact No:9579742944",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "payment_type": "Credit",
+   "mobile": "9579742944",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS742376",
+   "ledger_name": "SWAN Hospitality",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Soo coffee shop....1236/a, Rd Number 66, Jubilee Hills, Hyderabad, Telangana 500033, Contact - 91826 08968 ",
+   "route": "1",
+   "route_day": "TUE/THU/SAT",
+   "payment_type": "Advance",
+   "mobile": null,
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS177954",
+   "ledger_name": "Synchem Unit Miraya Greens",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Survey No.72, Sakalwara Road,Bannerghatta Road,, Bangalore - 560083, Contact Person:Amith Pai, Contact No:9972277700",
+   "route": "7",
+   "route_day": "FRI",
+   "payment_type": "Credit",
+   "mobile": "9972277700",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS182505",
+   "ledger_name": "Tanuja R(Ainor Tindi Mane)",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Flat no 15, Vajarahalli Road, Mathra Shree, Enterprises, Lingadheeranahalli Andhrahalli,, Bengaluru- 560061, Contact Person:Vishwas Cr, Contact No:9900151440",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Advance",
+   "mobile": "9900151440",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS696148",
+   "ledger_name": "Taruna",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "68, Subbarama Chetty Rd, Basavanagudi, , Bengaluru, Karnataka 560004, 91587 79152, .",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Advance",
+   "mobile": null,
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS994812",
+   "ledger_name": "The Faith Cafe",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Ground Floor, No.448, Jharana, 17th Cross,17th Main,, Sector-4,HSR Layout, Bengaluru, Bengaluru, Urban, Karnataka, 560102, Contact Person:Mr.Tariq Raza, Contact No:7007716493",
+   "route": "Porter",
+   "route_day": "THU",
+   "payment_type": "Credit",
+   "mobile": "7007716493",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS623068",
+   "ledger_name": "The Stage Cafe",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "MK Towers ,4th floor,80feet ,new bel,rd raj mahal, vilas 2nd stage armane nagar,bangalore-560094, Contact Person:Deepak, Contact No:9981887059",
+   "route": "2",
+   "route_day": "TUE/THU/SAT",
+   "payment_type": "Advance",
+   "mobile": "9981887059",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS997704",
+   "ledger_name": "Torq 03 Sports & Adventures Private Limited",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "E-Zone Club, 23/24, Chinnapanahalli Main Rd, inside E-Zone Club, Anand Nagar, Aswath Nagar, Marathahalli, Bengaluru, Karnataka 560037",
+   "route": "7/Parcel",
+   "route_day": "TUE/WED",
+   "payment_type": "Credit",
+   "mobile": "8904127711",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS341975",
+   "ledger_name": "United Distribution Services",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "No.11 K No.316,2 Parappana Agrahara,, VISHWESHRAIHA LAY OUT, HOSA ROAD, 4TH, CROSS END, BENGALURU-560100, Contact Person:Devanand, Contact No:9901477782",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Advance",
+   "mobile": "9901477782",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS366647",
+   "ledger_name": "Veg Works",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Plot no,64/a-1,3rd floor bommasandra,industrial area,, hosur main road,anekal taluk,bangalore-560099, contact person : NITHIN, ph no : 9902540000",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": "9902540000",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS521024",
+   "ledger_name": "VELINA DISMAS GIGOOL",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Souza’s Eatery and Cafe,Kothari Compound, Ground, Floor & Mezzanine,Warehouse No.1A/3, Neelkanth, Greens,Thane, Thane,Maharashtra, 400610, Contact Person:Dismas Gigool, Contact No:9823165245",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "payment_type": "Credit",
+   "mobile": "9823165245",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS997702",
+   "ledger_name": "Velvet Bakes",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "No 77/5, Nandidurga Road Benson Town,, Bengaluru, Bengaluru Urban, Karnataka, 560046, Contact Person : Ms. Sadia, Contact No : 9731293122",
+   "route": "2",
+   "route_day": "TUE/THU/SAT",
+   "payment_type": "Credit",
+   "mobile": "9731293122",
+   "city": null,
+   "area": null
+  },
+  {
+   "ledger_id": "CUS861472",
+   "ledger_name": "Vero League Hospitality LLP",
+   "status": "Active",
+   "emp_name": "Prasanth",
+   "address": "Sporthood center for excellence hal sports complex,, vinayak nagar vibhutipura bengaluru karnataka-560017, Contact Person:Deepak Naidu, Contact No.:7829496668",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "payment_type": "Advance",
+   "mobile": "7829496668",
+   "city": null,
+   "area": null
+  }
+ ],
+ "approvals": [
+  {
+   "ledger_id": "CUS960614",
+   "blend": "Pure Coffee-Excelcia Beans-500"
+  },
+  {
+   "ledger_id": "CUS397954",
+   "blend": "Pure Coffee-Excelcia Beans-500"
+  },
+  {
+   "ledger_id": "CUS397954",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS440269",
+   "blend": "Tea-KT Gold-500"
+  },
+  {
+   "ledger_id": "CUS440269",
+   "blend": "Tea-KT Royal-500"
+  },
+  {
+   "ledger_id": "CUS355263",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS609474",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS290808",
+   "blend": "Pure Coffee-Excelcia Beans-500"
+  },
+  {
+   "ledger_id": "CUS634488",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS402034",
+   "blend": "Pure Coffee-Excelcia Beans-500"
+  },
+  {
+   "ledger_id": "CUS402034",
+   "blend": "Pure Coffee-Montana Beans-500"
+  },
+  {
+   "ledger_id": "CUS727458",
+   "blend": "Pure Coffee-Excelcia Beans-500"
+  },
+  {
+   "ledger_id": "CUS461971",
+   "blend": "Pure Coffee-Cafe Excelsia Beans Light Roast-500"
+  },
+  {
+   "ledger_id": "CUS461971",
+   "blend": "Pure Coffee-Italian Roast Beans-500"
+  },
+  {
+   "ledger_id": "CUS713406",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS661610",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS413966",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS165761",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS247766",
+   "blend": "Pure Coffee-Breakfast Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS181661",
+   "blend": "Pure Coffee-Excelcia Beans-500"
+  },
+  {
+   "ledger_id": "CUS330339",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS500946",
+   "blend": "Coffee Decoction-Delight Premium Bold-1000"
+  },
+  {
+   "ledger_id": "CUS430511",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS645357",
+   "blend": "Pure Coffee-Excelcia Beans-500"
+  },
+  {
+   "ledger_id": "CUS785816",
+   "blend": "Pure Coffee-Original Blend Beans-250"
+  },
+  {
+   "ledger_id": "CUS436942",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS484389",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS441148",
+   "blend": "Pure Coffee-IC Beans-1000"
+  },
+  {
+   "ledger_id": "CUS441148",
+   "blend": "Pure Coffee-IC Beans-250"
+  },
+  {
+   "ledger_id": "CUS441148",
+   "blend": "Pure Coffee-RS Whiskey Barrel Beans-250"
+  },
+  {
+   "ledger_id": "CUS340382",
+   "blend": "RS- Mysore Nuggets Beans"
+  },
+  {
+   "ledger_id": "CUS997703",
+   "blend": "Pure Coffee-Excelcia Beans-500"
+  },
+  {
+   "ledger_id": "CUS113211",
+   "blend": "Pure Coffee-Italian Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS447425",
+   "blend": "Pure Coffee-Breakfast Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS531898",
+   "blend": "Pure Coffee-Excelcia Beans-500"
+  },
+  {
+   "ledger_id": "CUS571277",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS474210",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS345727",
+   "blend": "Pure Coffee-Italian Roast Beans-500"
+  },
+  {
+   "ledger_id": "CUS218824",
+   "blend": "Pure Coffee-Excelcia Beans-500"
+  },
+  {
+   "ledger_id": "CUS218824",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS997701",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS452523",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS761537",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS300113",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS104275",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS528408",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS147049",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS514925",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS678901",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS997700",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS784402",
+   "blend": "Coffee Decoction-Delight Premium Bold-200"
+  },
+  {
+   "ledger_id": "CUS880689",
+   "blend": "Coffee-Brownie Special-200"
+  },
+  {
+   "ledger_id": "CUS748726",
+   "blend": "Pure Coffee-Easy Bites Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS798928",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS997698",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS997698",
+   "blend": "Pure Coffee-Breakfast Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS424418",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS500848",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS103667",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS989278",
+   "blend": "Coffee-Brownie Special-200"
+  },
+  {
+   "ledger_id": "CUS522978",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS146412",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS970842",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS639117",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS465542",
+   "blend": "Coffee-Brownie Special-200"
+  },
+  {
+   "ledger_id": "CUS320044",
+   "blend": "Badam Powder-500"
+  },
+  {
+   "ledger_id": "CUS320044",
+   "blend": "Instant-Rava Idly-500"
+  },
+  {
+   "ledger_id": "CUS380444",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS593950",
+   "blend": "Coffee-Brownie Special-200"
+  },
+  {
+   "ledger_id": "CUS396955",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS838298",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS838298",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS838298",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS761203",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS215946",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS210909",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS706814",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS316558",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS426814",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS907841",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS997697",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS554808",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS658932",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS439208",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS706736",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS725471",
+   "blend": "Instant-Freeze Dried-250"
+  },
+  {
+   "ledger_id": "CUS357077",
+   "blend": "Pure Coffee-Breakfast Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS230583",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS230940",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS272680",
+   "blend": "Coffee-Brownie Special-200"
+  },
+  {
+   "ledger_id": "CUS272680",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS742376",
+   "blend": "RS- Mysore Nuggets Beans"
+  },
+  {
+   "ledger_id": "CUS177954",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS177954",
+   "blend": "Tea-KT Gold-500"
+  },
+  {
+   "ledger_id": "CUS182505",
+   "blend": "Coffee-Brownie Special-200"
+  },
+  {
+   "ledger_id": "CUS696148",
+   "blend": "Pure Coffee-Breakfast Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS994812",
+   "blend": "Pure Coffee-Excelcia Beans-500"
+  },
+  {
+   "ledger_id": "CUS623068",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS997704",
+   "blend": "Pure Coffee-Excelcia Beans-500"
+  },
+  {
+   "ledger_id": "CUS341975",
+   "blend": "Pure Coffee-Original Blend Beans-500"
+  },
+  {
+   "ledger_id": "CUS366647",
+   "blend": "Coffee-Special Gold-200"
+  },
+  {
+   "ledger_id": "CUS366647",
+   "blend": "Coffee-Special Gold-500"
+  },
+  {
+   "ledger_id": "CUS521024",
+   "blend": "Coffee-Brownie Special-200"
+  },
+  {
+   "ledger_id": "CUS521024",
+   "blend": "Tea-KT Royal-500"
+  },
+  {
+   "ledger_id": "CUS997702",
+   "blend": "Pure Coffee-Excelcia Beans-500"
+  },
+  {
+   "ledger_id": "CUS861472",
+   "blend": "Coffee-Cafe Supreme-200"
+  },
+  {
+   "ledger_id": "CUS861472",
+   "blend": "Tea-KT Royal-250"
+  }
+ ],
+ "products": [
+  {
+   "sku_id": "SKU323201",
+   "name": "Pure Coffee-Original Blend Beans-500",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323202",
+   "name": "Pure Coffee-Excelcia Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323204",
+   "name": "Pure Coffee-Excelcia Beans-500",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323206",
+   "name": "Pure Coffee-Italian Roast Beans-500",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323207",
+   "name": "Pure Coffee-Original Blend Beans-500",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323208",
+   "name": "Pure Coffee-Breakfast Blend Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323209",
+   "name": "Pure Coffee-Breakfast Blend R&G-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323210",
+   "name": "Pure Coffee-Breakfast Blend Beans-500",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323211",
+   "name": "Pure Coffee-Montana Beans-500",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323212",
+   "name": "Coffee-Brownie Special-200",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323213",
+   "name": "Coffee-Brownie Special-500",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323214",
+   "name": "Coffee-Master Roast-200",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323215",
+   "name": "Coffee-Master Roast-500",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323216",
+   "name": "Coffee Decoction-Delight Premium Bold-1000",
+   "uom": "LTR",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323217",
+   "name": "Coffee Decoction-Delight Premium Bold-200",
+   "uom": "LTR",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323218",
+   "name": "Pure Coffee-RS Alpha Roast Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323219",
+   "name": "Pure Coffee-RS Alpha Roast R&G-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323220",
+   "name": "Pure Coffee-RS Arakku Valley Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323221",
+   "name": "Pure Coffee-RS Arakku Valley R&G-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323222",
+   "name": "Pure Coffee-RS Assorted Drip Box-10 X 10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323223",
+   "name": "Pure Coffee-RS BC 225 Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323224",
+   "name": "Pure Coffee-RS Biligiri Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323225",
+   "name": "Pure Coffee-RS Biligiri Coffee Beans-500",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323226",
+   "name": "Pure Coffee-RS Brew Assorted-10x10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323227",
+   "name": "Pure Coffee-RS Cinnamon Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323228",
+   "name": "Pure Coffee-RS Cinnamon R&G-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323229",
+   "name": "Pure Coffee-RS Classic Columbian Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323230",
+   "name": "Pure Coffee-RS Cold Brew Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323231",
+   "name": "Pure Coffee-RS Coorg Natural Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323232",
+   "name": "Pure Coffee-RS Coorg Natural R&G-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323233",
+   "name": "Pure Coffee-RS Coorg Naturals Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323234",
+   "name": "Pure Coffee-RS Coorg Naturals R&G-100",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323235",
+   "name": "Pure Coffee-RS Coorg Naturals R&G-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323236",
+   "name": "Pure Coffee-RS Decaffinated Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323237",
+   "name": "Pure Coffee-RS Drip Filter Arakku Valley -10x10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323238",
+   "name": "Pure Coffee-RS Drip Filter Assorted-10x10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323239",
+   "name": "Pure Coffee-RS Drip Filter Cinnamon-10x10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323240",
+   "name": "Pure Coffee-RS Drip Filter Coorg Natural-10x10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323241",
+   "name": "Pure Coffee-RS Drip Filter Decaffinated-10x10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323242",
+   "name": "Pure Coffee-RS Drip Filter Ethiopian Elegance-10x10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323243",
+   "name": "Pure Coffee-RS Drip Filter First Rush-10x10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323244",
+   "name": "Pure Coffee-RS Drip Filter Italia Roast-10x10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323245",
+   "name": "Pure Coffee-RS Drip Filter Kenyan Highlands-10x10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323246",
+   "name": "Pure Coffee-RS Drip Filter Monsoon Malabar-10x10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323247",
+   "name": "Pure Coffee-RS Drip Filter Mysore Nuggets-10x10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323248",
+   "name": "Pure Coffee-RS Drip Filter Wine Barrel-10x10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323249",
+   "name": "Pure Coffee-RS Ethiopian Elegance Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323250",
+   "name": "Pure Coffee-RS Excelcia Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323251",
+   "name": "Pure Coffee-RS First Rush Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323252",
+   "name": "Pure Coffee-RS First Rush R&G-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323253",
+   "name": "Pure Coffee-RS Italia Roast Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323254",
+   "name": "Pure Coffee-RS Italia Roast R&G-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323255",
+   "name": "Pure Coffee-RS Kenyan Highlands Beans-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323256",
+   "name": "Pure Coffee-RS Kenyan Highlands R&G-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323257",
+   "name": "Pure Coffee-RS Monsoon Malabar R&G-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323258",
+   "name": "Pure Coffee-RS Mysore Nuggets R&G-250",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323259",
+   "name": "Pure Coffee-RS Hospura Blend Beans-200",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323260",
+   "name": "Pure Coffee-RS Drip Filter Hospura-10x10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323261",
+   "name": "Pure Coffee-RS Drip Filter Hardoor-10x10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323262",
+   "name": "Pure Coffee-RS Drip Filter Whiskey Barrel-10x10",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323263",
+   "name": "Pure Coffee-RS Kenya Beans-200",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323264",
+   "name": "Pure Coffee-RS Ngronogoro Beans-200",
+   "uom": "KG",
+   "status": "Active"
+  },
+  {
+   "sku_id": "SKU323265",
+   "name": "Pure Coffee-Easy Bites Blend Beans-500",
+   "uom": "KG",
+   "status": "Active"
+  }
+ ],
+ "orders": [
+  {
+   "order_id": "ORD202608270004",
+   "order_date": "2026-08-27",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Manyata Tech Park",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-08-27",
+   "delivered_on": "2026-08-29",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608270006",
+   "order_date": "2026-08-27",
+   "ledger_name": "Brew Cafe",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "WED /SAT",
+   "billing_date": "2026-08-28",
+   "delivered_on": "2026-08-29",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608220002",
+   "order_date": "2026-08-21",
+   "ledger_name": "NKP EMPIRE VENTURES PRIVATE LIMITED",
+   "blend": "Pure Coffee-Easy Bites Blend Beans-500",
+   "qty": 100,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-08-22",
+   "delivered_on": "2026-08-28",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608270001",
+   "order_date": "2026-08-26",
+   "ledger_name": "Centre for Cellular and Molecular Platforms (C-Camp)",
+   "blend": "Pure Coffee-Breakfast Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "4",
+   "route_day": "FRI",
+   "billing_date": "2026-08-27",
+   "delivered_on": "2026-08-28",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608270005",
+   "order_date": "2026-08-27",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - UB City (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "8",
+   "route_day": "THU",
+   "billing_date": "2026-08-27",
+   "delivered_on": "2026-08-28",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608280001",
+   "order_date": "2026-08-28",
+   "ledger_name": "Evya Cafe",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-08-28",
+   "delivered_on": "2026-08-28",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608240003",
+   "order_date": "2026-08-24",
+   "ledger_name": "Mirah Hospitality & Gourmet Solutions Private Limited",
+   "blend": "Coffee Decoction-Delight Premium Bold-200",
+   "qty": 40,
+   "uom": "PAC",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-08-25",
+   "delivered_on": "2026-08-27",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608260003",
+   "order_date": "2026-08-23",
+   "ledger_name": "Filter Cafe and Kitchen",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "THU",
+   "billing_date": "2026-08-26",
+   "delivered_on": "2026-08-27",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608270002",
+   "order_date": "2026-08-26",
+   "ledger_name": "Cruffins Foods(OPC)Private Limited",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "PickUP",
+   "route_day": "Daily",
+   "billing_date": "2026-08-27",
+   "delivered_on": "2026-08-27",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608270003",
+   "order_date": "2026-08-27",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Jayanagar (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "THU/SAT",
+   "billing_date": "2026-08-27",
+   "delivered_on": "2026-08-27",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608240002",
+   "order_date": "2026-08-24",
+   "ledger_name": "Bliss Chocolate India Pvt Ltd",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 200,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-08-24",
+   "delivered_on": "2026-08-26",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608260004",
+   "order_date": "2026-08-26",
+   "ledger_name": "Cafe' Mondo (B N) - PL",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-08-25",
+   "delivered_on": "2026-08-26",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608260002",
+   "order_date": "2026-08-27",
+   "ledger_name": "Raimukk Marketing LLP",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-08-26",
+   "delivered_on": "2026-08-26",
+   "remarks": "Need to Book porter",
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608220004",
+   "order_date": "2026-08-22",
+   "ledger_name": "Taruna",
+   "blend": "Pure Coffee-Breakfast Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-08-22",
+   "delivered_on": "2026-08-24",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608220005",
+   "order_date": "2026-08-22",
+   "ledger_name": "Eywa",
+   "blend": "Coffee Decoction-Delight Premium Bold-1000",
+   "qty": 6,
+   "uom": "LTR",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-08-24",
+   "delivered_on": "2026-08-24",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608240004",
+   "order_date": "2026-08-24",
+   "ledger_name": "The Faith Cafe",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 20,
+   "uom": "KG",
+   "route": "Porter",
+   "route_day": "THU",
+   "billing_date": "2026-08-24",
+   "delivered_on": "2026-08-24",
+   "remarks": "Need Book Porter",
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608200041",
+   "order_date": "2026-08-20",
+   "ledger_name": "Kerbside Bistro",
+   "blend": "Pure Coffee-Italian Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "Porter",
+   "route_day": "TUE/THU/SAT",
+   "billing_date": "2026-08-22",
+   "delivered_on": "2026-08-22",
+   "remarks": "Porter",
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608220003",
+   "order_date": "2026-08-20",
+   "ledger_name": "HUNGERAVENUE INDIA PRIVATE LIMITED",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 20,
+   "uom": "KG",
+   "route": "Porter",
+   "route_day": null,
+   "billing_date": "2026-08-22",
+   "delivered_on": "2026-08-22",
+   "remarks": "Porter",
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608220001",
+   "order_date": "2026-08-21",
+   "ledger_name": "Tanuja R(Ainor Tindi Mane)",
+   "blend": "Coffee-Brownie Special-200",
+   "qty": 10,
+   "uom": "KG",
+   "route": "Porter",
+   "route_day": "Daily",
+   "billing_date": "2026-08-22",
+   "delivered_on": "2026-08-22",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608120003",
+   "order_date": "2026-08-12",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Nexus Shantiniketan (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "TUE",
+   "billing_date": "2026-08-17",
+   "delivered_on": "2026-08-20",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608160001",
+   "order_date": "2026-08-16",
+   "ledger_name": "Pasta Street India Pvt Ltd -Koramangala",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "MON/THU",
+   "billing_date": "2026-08-17",
+   "delivered_on": "2026-08-20",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608140002",
+   "order_date": "2026-08-14",
+   "ledger_name": "Raimukk Marketing LLP",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 7,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-08-18",
+   "delivered_on": "2026-08-20",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608170003",
+   "order_date": "2026-08-17",
+   "ledger_name": "India CKP Consultants Pvt Ltd",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 10,
+   "uom": "KG",
+   "route": "7",
+   "route_day": "WED",
+   "billing_date": "2026-08-18",
+   "delivered_on": "2026-08-20",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608170002",
+   "order_date": "2026-08-17",
+   "ledger_name": "1 Percent Circle Private Limited",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 6,
+   "uom": "KG",
+   "route": "7",
+   "route_day": "WED",
+   "billing_date": "2026-08-18",
+   "delivered_on": "2026-08-20",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608140001",
+   "order_date": "2026-08-14",
+   "ledger_name": "Filter Cafe and Kitchen",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "THU",
+   "billing_date": "2026-08-19",
+   "delivered_on": "2026-08-20",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608170004",
+   "order_date": "2026-08-17",
+   "ledger_name": "MAHESH ENTERPRISES",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "THU",
+   "billing_date": "2026-08-19",
+   "delivered_on": "2026-08-20",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608120005",
+   "order_date": "2026-08-12",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - UKN Miraya Rose (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "TUE",
+   "billing_date": "2026-08-17",
+   "delivered_on": "2026-08-19",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911001",
+   "order_date": "2026-08-18",
+   "ledger_name": "MIKACHA BAKSHANAM VENTURES PRIVATE LIMITED",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "Porter",
+   "route_day": "Daily",
+   "billing_date": "2026-08-18",
+   "delivered_on": "2026-08-19",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608120001",
+   "order_date": "2026-08-12",
+   "ledger_name": "Centre for Cellular and Molecular Platforms (C-Camp)",
+   "blend": "Pure Coffee-Breakfast Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "4",
+   "route_day": "FRI",
+   "billing_date": "2026-08-13",
+   "delivered_on": "2026-08-14",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608080002",
+   "order_date": "2026-08-08",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Orion Brigade Mall (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "1",
+   "route_day": "THU",
+   "billing_date": "2026-08-12",
+   "delivered_on": "2026-08-13",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608040007",
+   "order_date": "2026-08-10",
+   "ledger_name": "Milano22 Foods Pvt Ltd (Warehouse)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 50,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "THU",
+   "billing_date": "2026-08-12",
+   "delivered_on": "2026-08-13",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608120002",
+   "order_date": "2026-08-12",
+   "ledger_name": "Filter Cafe and Kitchen",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "THU",
+   "billing_date": "2026-08-12",
+   "delivered_on": "2026-08-13",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608100001",
+   "order_date": "2026-08-10",
+   "ledger_name": "LEXUS/MOTORWORLD PRIVATE LIMITED - P L",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "8",
+   "route_day": "THU",
+   "billing_date": "2026-08-11",
+   "delivered_on": "2026-08-12",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608110001",
+   "order_date": "2026-08-11",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - UB City (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "8",
+   "route_day": "THU",
+   "billing_date": "2026-08-11",
+   "delivered_on": "2026-08-12",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608010004",
+   "order_date": "2026-08-01",
+   "ledger_name": "Filter Cafe and Kitchen",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "THU",
+   "billing_date": "2026-08-06",
+   "delivered_on": "2026-08-08",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911002",
+   "order_date": "2026-08-06",
+   "ledger_name": "Pasta Street India Pvt Ltd - Sarjapura",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "WED",
+   "billing_date": "2026-08-07",
+   "delivered_on": "2026-08-08",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608080001",
+   "order_date": "2026-08-07",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Nexus Koramangala (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 10,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "WED/SAT",
+   "billing_date": "2026-08-07",
+   "delivered_on": "2026-08-08",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608170001",
+   "order_date": "2026-08-17",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Manyata Tech Park",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-08-07",
+   "delivered_on": "2026-08-08",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608030001",
+   "order_date": "2026-08-03",
+   "ledger_name": "Pasta Street",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "8",
+   "route_day": "Daily",
+   "billing_date": "2026-08-05",
+   "delivered_on": "2026-08-07",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608030001",
+   "order_date": "2026-08-01",
+   "ledger_name": "NKP EMPIRE VENTURES PRIVATE LIMITED",
+   "blend": "Pure Coffee-Easy Bites Blend Beans-500",
+   "qty": 80,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-08-06",
+   "delivered_on": "2026-08-07",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608050001",
+   "order_date": "2026-08-05",
+   "ledger_name": "Vero League Hospitality LLP",
+   "blend": "Coffee-Cafe Supreme-200",
+   "qty": 5,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-08-06",
+   "delivered_on": "2026-08-07",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608050002",
+   "order_date": "2026-08-05",
+   "ledger_name": "Tanuja R(Ainor Tindi Mane)",
+   "blend": "Coffee-Brownie Special-200",
+   "qty": 10,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-08-06",
+   "delivered_on": "2026-08-07",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202607310011",
+   "order_date": "2026-07-31",
+   "ledger_name": "Pasta Street (Indiranagar)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 3,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-08-03",
+   "delivered_on": "2026-08-06",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202607310007",
+   "order_date": "2026-07-31",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Bhartiya City (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "4",
+   "route_day": "THU",
+   "billing_date": "2026-08-03",
+   "delivered_on": "2026-08-06",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608040003",
+   "order_date": "2026-08-04",
+   "ledger_name": "Bliss Chocolate India Pvt Ltd",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 150,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-08-04",
+   "delivered_on": "2026-08-06",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608040006",
+   "order_date": "2026-08-04",
+   "ledger_name": "AUBREE LE CHOCOLATIER",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 20,
+   "uom": "KG",
+   "route": "8",
+   "route_day": "Daily",
+   "billing_date": "2026-08-05",
+   "delivered_on": "2026-08-06",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608040005",
+   "order_date": "2026-08-04",
+   "ledger_name": "Kerbside Bistro",
+   "blend": "Pure Coffee-Italian Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "1",
+   "route_day": "TUE/THU/SAT",
+   "billing_date": "2026-08-05",
+   "delivered_on": "2026-08-06",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608040002",
+   "order_date": "2026-08-04",
+   "ledger_name": "Milano Foods Pvt Ltd (Warehouse 2)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 50,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "THU",
+   "billing_date": "2026-08-05",
+   "delivered_on": "2026-08-06",
+   "remarks": "Porter",
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608010008",
+   "order_date": "2026-08-01",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Jayanagar (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "THU/SAT",
+   "billing_date": "2026-08-03",
+   "delivered_on": "2026-08-05",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608010001",
+   "order_date": "2026-07-24",
+   "ledger_name": "Back Post",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 10,
+   "uom": "KG",
+   "route": "7",
+   "route_day": "WED",
+   "billing_date": "2026-08-04",
+   "delivered_on": "2026-08-05",
+   "remarks": "Payment Received",
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608020001",
+   "order_date": "2026-08-02",
+   "ledger_name": "MI PI Pizzeria",
+   "blend": "Pure Coffee-Italian Roast Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "WED",
+   "billing_date": "2026-08-04",
+   "delivered_on": "2026-08-05",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911003",
+   "order_date": "2026-08-04",
+   "ledger_name": "Brew Cafe",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "WED /SAT",
+   "billing_date": "2026-08-04",
+   "delivered_on": "2026-08-05",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608040004",
+   "order_date": "2026-08-04",
+   "ledger_name": "The Faith Cafe",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 20,
+   "uom": "KG",
+   "route": "Porter",
+   "route_day": "THU",
+   "billing_date": "2026-08-05",
+   "delivered_on": "2026-08-05",
+   "remarks": "Need Send the Wiskey Barel aged sample",
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202607310003",
+   "order_date": "2026-07-31",
+   "ledger_name": "Pasta Street - J P Nagar",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 3,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "TUE/SAT",
+   "billing_date": "2026-08-03",
+   "delivered_on": "2026-08-04",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202607310004",
+   "order_date": "2026-07-31",
+   "ledger_name": "Pasta Street India Pvt Ltd - Varthur",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 4,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "TUE",
+   "billing_date": "2026-08-03",
+   "delivered_on": "2026-08-04",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202607310005",
+   "order_date": "2026-07-31",
+   "ledger_name": "Pasta Street India Pvt Ltd - Sahakaranagar",
+   "blend": "Coffee-Brownie Special-200",
+   "qty": 5,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "TUE/THU/SAT",
+   "billing_date": "2026-08-03",
+   "delivered_on": "2026-08-04",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202607310006",
+   "order_date": "2026-07-31",
+   "ledger_name": "Pasta Street India Pvt Ltd - Whitefield",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 3,
+   "uom": "KG",
+   "route": "7",
+   "route_day": "TUE",
+   "billing_date": "2026-08-03",
+   "delivered_on": "2026-08-04",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608030002",
+   "order_date": "2026-08-03",
+   "ledger_name": "oswal minerals ltd",
+   "blend": "Pure Coffee-Breakfast Blend Beans-500",
+   "qty": 1,
+   "uom": "KG",
+   "route": "1",
+   "route_day": "TUE/THU/SAT",
+   "billing_date": "2026-08-03",
+   "delivered_on": "2026-08-04",
+   "remarks": "Porter",
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202607310010",
+   "order_date": "2026-07-31",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - UB City (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "8",
+   "route_day": "THU",
+   "billing_date": "2026-08-04",
+   "delivered_on": "2026-08-04",
+   "remarks": "Stock Given to Keshav",
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608040001",
+   "order_date": "2026-07-31",
+   "ledger_name": "Cruffins Foods(OPC)Private Limited",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-08-04",
+   "delivered_on": "2026-08-04",
+   "remarks": "Payment Received",
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608030002",
+   "order_date": "2026-08-03",
+   "ledger_name": "oswal minerals ltd",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "1",
+   "route_day": "TUE/THU/SAT",
+   "billing_date": "2026-08-03",
+   "delivered_on": "2026-08-03",
+   "remarks": "Porter Booked",
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202607310001",
+   "order_date": "2026-07-31",
+   "ledger_name": "1 Percent Circle Private Limited",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 6,
+   "uom": "KG",
+   "route": "7",
+   "route_day": "WED",
+   "billing_date": "2026-08-01",
+   "delivered_on": "2026-08-01",
+   "remarks": "Book The Porter they will pay",
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608010003",
+   "order_date": "2026-08-01",
+   "ledger_name": "Cafe' Mondo (B N) - PL",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-08-01",
+   "delivered_on": "2026-08-01",
+   "remarks": "Book The Porter they will pay",
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608010002",
+   "order_date": "2026-08-01",
+   "ledger_name": "NKP EMPIRE VENTURES PRIVATE LIMITED",
+   "blend": "Pure Coffee-Easy Bites Blend Beans-500",
+   "qty": 20,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-08-01",
+   "delivered_on": "2026-08-01",
+   "remarks": "This Need send to Chennai Address",
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608010005",
+   "order_date": "2026-07-31",
+   "ledger_name": "HUNGERAVENUE INDIA PRIVATE LIMITED",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 20,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": null,
+   "billing_date": "2026-07-31",
+   "delivered_on": "2026-08-01",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608010007",
+   "order_date": "2026-07-31",
+   "ledger_name": "Stepier Office Solutions Private Limited",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-07-31",
+   "delivered_on": "2026-08-01",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD202608010006",
+   "order_date": "2026-07-31",
+   "ledger_name": "Skyline Office Suppliers",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-07-31",
+   "delivered_on": "2026-08-01",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911004",
+   "order_date": "2026-08-29",
+   "ledger_name": "Kerbside Bistro",
+   "blend": "Pure Coffee-Italian Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "1",
+   "route_day": "TUE/THU/SAT",
+   "billing_date": "2026-08-29",
+   "delivered_on": "2026-08-31",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911005",
+   "order_date": "2026-08-31",
+   "ledger_name": "Tanuja R(Ainor Tindi Mane)",
+   "blend": "Coffee-Brownie Special-200",
+   "qty": 10,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-08-31",
+   "delivered_on": "2026-08-31",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911006",
+   "order_date": "2026-08-28",
+   "ledger_name": "HUNGERAVENUE INDIA PRIVATE LIMITED",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 30,
+   "uom": "KG",
+   "route": "Porter",
+   "route_day": null,
+   "billing_date": "2026-09-02",
+   "delivered_on": "2026-09-03",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911007",
+   "order_date": "2026-08-31",
+   "ledger_name": "Pasta Street India Pvt Ltd - Sarjapura",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 3,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "WED",
+   "billing_date": "2026-09-01",
+   "delivered_on": "2026-09-02",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911008",
+   "order_date": "2026-09-01",
+   "ledger_name": "iTREE DYNAMICS SOLUTIONS PRIVATE LIMITED",
+   "blend": "RS- Mysore Nuggets Beans",
+   "qty": 2,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-09-01",
+   "delivered_on": "2026-09-02",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911009",
+   "order_date": "2026-08-31",
+   "ledger_name": "Pasta Street",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "8",
+   "route_day": "Daily",
+   "billing_date": "2026-09-01",
+   "delivered_on": "2026-09-02",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911010",
+   "order_date": "2026-04-01",
+   "ledger_name": "Cruffins Foods(OPC)Private Limited",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-04-01",
+   "delivered_on": "2026-04-02",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911011",
+   "order_date": "2026-04-01",
+   "ledger_name": "Filter Cafe and Kitchen",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "THU",
+   "billing_date": "2026-04-01",
+   "delivered_on": "2026-04-02",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911012",
+   "order_date": "2026-04-01",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Bhartiya City (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "4",
+   "route_day": "THU",
+   "billing_date": "2026-04-01",
+   "delivered_on": "2026-04-02",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911013",
+   "order_date": "2026-04-01",
+   "ledger_name": "Pasta Street (Indiranagar)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-04-01",
+   "delivered_on": "2026-04-02",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911014",
+   "order_date": "2026-04-02",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Phoenix Market City (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 10,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "TUE",
+   "billing_date": "2026-04-02",
+   "delivered_on": "2026-04-03",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911015",
+   "order_date": "2026-04-03",
+   "ledger_name": "Pasta Street - J P Nagar",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "TUE/SAT",
+   "billing_date": "2026-04-03",
+   "delivered_on": "2026-04-04",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911016",
+   "order_date": "2026-04-04",
+   "ledger_name": "Brewing Beans",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 40,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "TUE",
+   "billing_date": "2026-04-04",
+   "delivered_on": "2026-04-05",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911017",
+   "order_date": "2026-04-04",
+   "ledger_name": "Milano Ice Cream Pvt Ltd - Kalyan Nagar",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 10,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "MON/WED/FRI",
+   "billing_date": "2026-04-04",
+   "delivered_on": "2026-04-05",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911018",
+   "order_date": "2026-04-04",
+   "ledger_name": "Milano22 Foods Pvt Ltd - Brookfield",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "wed",
+   "billing_date": "2026-04-04",
+   "delivered_on": "2026-04-05",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911019",
+   "order_date": "2026-04-06",
+   "ledger_name": "Back Post",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 10,
+   "uom": "KG",
+   "route": "7",
+   "route_day": "WED",
+   "billing_date": "2026-04-06",
+   "delivered_on": "2026-04-07",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911020",
+   "order_date": "2026-04-06",
+   "ledger_name": "Pasta Street India Pvt Ltd - Whitefield",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 3,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "TUE",
+   "billing_date": "2026-04-06",
+   "delivered_on": "2026-04-07",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911021",
+   "order_date": "2026-04-06",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - UKN Miraya Rose (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "TUE",
+   "billing_date": "2026-04-06",
+   "delivered_on": "2026-04-07",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911022",
+   "order_date": "2026-04-06",
+   "ledger_name": "Pasta Street India Pvt Ltd - Sahakaranagar",
+   "blend": "Coffee-Brownie Special-200",
+   "qty": 3,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "TUE/THU/SAT",
+   "billing_date": "2026-04-06",
+   "delivered_on": "2026-04-07",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911023",
+   "order_date": "2026-04-07",
+   "ledger_name": "Raimukk Marketing LLP",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-04-07",
+   "delivered_on": "2026-04-08",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911024",
+   "order_date": "2026-04-07",
+   "ledger_name": "Art Of Delight",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "8",
+   "route_day": "Daily",
+   "billing_date": "2026-04-07",
+   "delivered_on": "2026-04-08",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911025",
+   "order_date": "2026-04-07",
+   "ledger_name": "MZAI Hospitality LLP",
+   "blend": "Coffee-Brownie Special-200",
+   "qty": 2,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-04-07",
+   "delivered_on": "2026-04-08",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911026",
+   "order_date": "2026-04-07",
+   "ledger_name": "Bliss Chocolate India Pvt Ltd",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 150,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-04-07",
+   "delivered_on": "2026-04-08",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911027",
+   "order_date": "2026-04-07",
+   "ledger_name": "Pasta Street India Pvt Ltd - Sarjapura",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "WED",
+   "billing_date": "2026-04-07",
+   "delivered_on": "2026-04-08",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911028",
+   "order_date": "2026-04-08",
+   "ledger_name": "Vero League Hospitality LLP",
+   "blend": "Coffee-Cafe Supreme-200",
+   "qty": 4,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-04-08",
+   "delivered_on": "2026-04-09",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911029",
+   "order_date": "2026-04-08",
+   "ledger_name": "Pasta Street India Pvt Ltd -Koramangala",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "MON/THU",
+   "billing_date": "2026-04-08",
+   "delivered_on": "2026-04-09",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911030",
+   "order_date": "2026-04-08",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - UB City (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "8",
+   "route_day": "THU",
+   "billing_date": "2026-04-08",
+   "delivered_on": "2026-04-09",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911031",
+   "order_date": "2026-04-08",
+   "ledger_name": "Filter Cafe and Kitchen",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "THU",
+   "billing_date": "2026-04-08",
+   "delivered_on": "2026-04-09",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911032",
+   "order_date": "2026-04-08",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Jayanagar (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "THU/SAT",
+   "billing_date": "2026-04-08",
+   "delivered_on": "2026-04-09",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911033",
+   "order_date": "2026-04-08",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Nexus Koramangala (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "WED/SAT",
+   "billing_date": "2026-04-08",
+   "delivered_on": "2026-04-09",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911034",
+   "order_date": "2026-04-09",
+   "ledger_name": "Taruna",
+   "blend": "Pure Coffee-Breakfast Blend Beans-500",
+   "qty": 3,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-04-09",
+   "delivered_on": "2026-04-10",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911035",
+   "order_date": "2026-04-09",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Manyata Tech Park",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-04-09",
+   "delivered_on": "2026-04-10",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911036",
+   "order_date": "2026-04-10",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Hyderabad-Toscano",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "Transport",
+   "route_day": "Daily",
+   "billing_date": "2026-04-10",
+   "delivered_on": "2026-04-11",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911037",
+   "order_date": "2026-04-13",
+   "ledger_name": "Pasta Street",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "8",
+   "route_day": "Daily",
+   "billing_date": "2026-04-13",
+   "delivered_on": "2026-04-14",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911038",
+   "order_date": "2026-04-13",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Toscano Restaurant Chennai",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "Transport",
+   "route_day": "Daily",
+   "billing_date": "2026-04-13",
+   "delivered_on": "2026-04-14",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911039",
+   "order_date": "2026-04-14",
+   "ledger_name": "MIKACHA BAKSHANAM VENTURES PRIVATE LIMITED",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 7,
+   "uom": "KG",
+   "route": "Porter",
+   "route_day": "Daily",
+   "billing_date": "2026-04-14",
+   "delivered_on": "2026-04-15",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911040",
+   "order_date": "2026-04-14",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - VR Mall Chennai (Toscano Collage Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 10,
+   "uom": "KG",
+   "route": "Transport",
+   "route_day": "Daily",
+   "billing_date": "2026-04-14",
+   "delivered_on": "2026-04-15",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911041",
+   "order_date": "2026-04-14",
+   "ledger_name": "Asha Sweet Center",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "1",
+   "route_day": "TUE/THU/SAT",
+   "billing_date": "2026-04-14",
+   "delivered_on": "2026-04-15",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911042",
+   "order_date": "2026-04-15",
+   "ledger_name": "Evya Cafe",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-04-15",
+   "delivered_on": "2026-04-16",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911043",
+   "order_date": "2026-04-15",
+   "ledger_name": "1 Percent Circle Private Limited",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "7",
+   "route_day": "WED",
+   "billing_date": "2026-04-15",
+   "delivered_on": "2026-04-16",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911044",
+   "order_date": "2026-04-15",
+   "ledger_name": "Filter Cafe and Kitchen",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "THU",
+   "billing_date": "2026-04-15",
+   "delivered_on": "2026-04-16",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911045",
+   "order_date": "2026-04-16",
+   "ledger_name": "Centre for Cellular and Molecular Platforms (C-Camp)",
+   "blend": "Pure Coffee-Breakfast Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "4",
+   "route_day": "FRI",
+   "billing_date": "2026-04-16",
+   "delivered_on": "2026-04-17",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911046",
+   "order_date": "2026-04-17",
+   "ledger_name": "HUNGERAVENUE INDIA PRIVATE LIMITED",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 30,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": null,
+   "billing_date": "2026-04-17",
+   "delivered_on": "2026-04-18",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911047",
+   "order_date": "2026-04-17",
+   "ledger_name": "Cafe' Mondo (B N) - PL",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-04-17",
+   "delivered_on": "2026-04-18",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911048",
+   "order_date": "2026-04-18",
+   "ledger_name": "Brewing Beans",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 40,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "TUE",
+   "billing_date": "2026-04-18",
+   "delivered_on": "2026-04-19",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911049",
+   "order_date": "2026-04-20",
+   "ledger_name": "Mirah Hospitality & Gourmet Solutions Private Limited",
+   "blend": "Coffee Decoction-Delight Premium Bold-200",
+   "qty": 40,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-04-20",
+   "delivered_on": "2026-04-21",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911050",
+   "order_date": "2026-04-20",
+   "ledger_name": "Milano Ice Cream - BEL Road - P L",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "TUE/THU/SAT",
+   "billing_date": "2026-04-20",
+   "delivered_on": "2026-04-21",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911051",
+   "order_date": "2026-04-20",
+   "ledger_name": "The Faith Cafe",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 20,
+   "uom": "KG",
+   "route": "Porter",
+   "route_day": "THU",
+   "billing_date": "2026-04-20",
+   "delivered_on": "2026-04-21",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911052",
+   "order_date": "2026-04-21",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Nexus Koramangala (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "WED/SAT",
+   "billing_date": "2026-04-21",
+   "delivered_on": "2026-04-22",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911053",
+   "order_date": "2026-04-22",
+   "ledger_name": "Art Of Delight",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "8",
+   "route_day": "Daily",
+   "billing_date": "2026-04-22",
+   "delivered_on": "2026-04-23",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911054",
+   "order_date": "2026-04-23",
+   "ledger_name": "Cruffins Foods(OPC)Private Limited",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-04-23",
+   "delivered_on": "2026-04-24",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911055",
+   "order_date": "2026-04-23",
+   "ledger_name": "Milano Ice Cream Pvt Ltd - Kalyan Nagar",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 10,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "MON/WED/FRI",
+   "billing_date": "2026-04-23",
+   "delivered_on": "2026-04-24",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911056",
+   "order_date": "2026-04-24",
+   "ledger_name": "Milano22 Foods Pvt Ltd - Brookfield",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "wed",
+   "billing_date": "2026-04-24",
+   "delivered_on": "2026-04-25",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911057",
+   "order_date": "2026-04-28",
+   "ledger_name": "The Stage Cafe",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 3,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "TUE/THU/SAT",
+   "billing_date": "2026-04-28",
+   "delivered_on": "2026-04-29",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911058",
+   "order_date": "2026-04-28",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Orion Brigade Mall (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "1",
+   "route_day": "THU",
+   "billing_date": "2026-04-28",
+   "delivered_on": "2026-04-29",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911059",
+   "order_date": "2026-04-28",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Nexus Shantiniketan (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "TUE",
+   "billing_date": "2026-04-28",
+   "delivered_on": "2026-04-29",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911060",
+   "order_date": "2026-04-29",
+   "ledger_name": "Filter Cafe and Kitchen",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "THU",
+   "billing_date": "2026-04-29",
+   "delivered_on": "2026-04-30",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911061",
+   "order_date": "2026-05-02",
+   "ledger_name": "Bliss Chocolate India Pvt Ltd",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 150,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-05-02",
+   "delivered_on": "2026-05-03",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911062",
+   "order_date": "2026-05-04",
+   "ledger_name": "Pasta Street India Pvt Ltd - Sahakaranagar",
+   "blend": "Coffee-Brownie Special-200",
+   "qty": 4,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "TUE/THU/SAT",
+   "billing_date": "2026-05-04",
+   "delivered_on": "2026-05-05",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911063",
+   "order_date": "2026-05-04",
+   "ledger_name": "Pasta Street (Indiranagar)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 3,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-05-04",
+   "delivered_on": "2026-05-05",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911064",
+   "order_date": "2026-05-04",
+   "ledger_name": "Pasta Street India Pvt Ltd - Whitefield",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 3,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "TUE",
+   "billing_date": "2026-05-04",
+   "delivered_on": "2026-05-05",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911065",
+   "order_date": "2026-05-04",
+   "ledger_name": "7 Flavours Foods and Beverages",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "TUE/THU/SAT",
+   "billing_date": "2026-05-04",
+   "delivered_on": "2026-05-05",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911066",
+   "order_date": "2026-05-04",
+   "ledger_name": "Pasta Street - J P Nagar",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 3,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "TUE/SAT",
+   "billing_date": "2026-05-04",
+   "delivered_on": "2026-05-05",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911067",
+   "order_date": "2026-05-05",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Hyderabad-Toscano",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "Transport",
+   "route_day": "Daily",
+   "billing_date": "2026-05-05",
+   "delivered_on": "2026-05-06",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911068",
+   "order_date": "2026-05-05",
+   "ledger_name": "MAHESH ENTERPRISES",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "THU",
+   "billing_date": "2026-05-05",
+   "delivered_on": "2026-05-06",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911069",
+   "order_date": "2026-05-05",
+   "ledger_name": "Pasta Street India Pvt Ltd - Sarjapura",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "WED",
+   "billing_date": "2026-05-05",
+   "delivered_on": "2026-05-06",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911070",
+   "order_date": "2026-05-06",
+   "ledger_name": "Pasta Street India Pvt Ltd -Koramangala",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "MON/THU",
+   "billing_date": "2026-05-06",
+   "delivered_on": "2026-05-07",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911071",
+   "order_date": "2026-05-06",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - UB City (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "8",
+   "route_day": "THU",
+   "billing_date": "2026-05-06",
+   "delivered_on": "2026-05-07",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911072",
+   "order_date": "2026-05-08",
+   "ledger_name": "Sanavi Venkatesh(TCB)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 10,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-05-08",
+   "delivered_on": "2026-05-09",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911073",
+   "order_date": "2026-05-08",
+   "ledger_name": "NTS NIRVANA SUITES",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 10,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-05-08",
+   "delivered_on": "2026-05-09",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911074",
+   "order_date": "2026-05-08",
+   "ledger_name": "VELINA DISMAS GIGOOL",
+   "blend": "Coffee-Brownie Special-200",
+   "qty": 6,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-05-08",
+   "delivered_on": "2026-05-09",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911075",
+   "order_date": "2026-05-08",
+   "ledger_name": "VELINA DISMAS GIGOOL",
+   "blend": "Tea-KT Royal-500",
+   "qty": 4,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-05-08",
+   "delivered_on": "2026-05-09",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911076",
+   "order_date": "2026-05-08",
+   "ledger_name": "The Faith Cafe",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 20,
+   "uom": "KG",
+   "route": "Porter",
+   "route_day": "THU",
+   "billing_date": "2026-05-08",
+   "delivered_on": "2026-05-09",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911077",
+   "order_date": "2026-05-08",
+   "ledger_name": "Milano Ice Cream - BEL Road - P L",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "TUE/THU/SAT",
+   "billing_date": "2026-05-08",
+   "delivered_on": "2026-05-09",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911078",
+   "order_date": "2026-05-08",
+   "ledger_name": "Kafe Viva - Doddakallsandra",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "FRI",
+   "billing_date": "2026-05-08",
+   "delivered_on": "2026-05-09",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911079",
+   "order_date": "2026-05-08",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Nexus Koramangala (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "WED/SAT",
+   "billing_date": "2026-05-08",
+   "delivered_on": "2026-05-09",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911080",
+   "order_date": "2026-05-09",
+   "ledger_name": "HUNGERAVENUE INDIA PRIVATE LIMITED",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": null,
+   "billing_date": "2026-05-09",
+   "delivered_on": "2026-05-10",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911081",
+   "order_date": "2026-05-09",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Jayanagar (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "3",
+   "route_day": "THU/SAT",
+   "billing_date": "2026-05-09",
+   "delivered_on": "2026-05-10",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911082",
+   "order_date": "2026-05-09",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - Bhartiya City (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "4",
+   "route_day": "THU",
+   "billing_date": "2026-05-09",
+   "delivered_on": "2026-05-10",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911083",
+   "order_date": "2026-05-09",
+   "ledger_name": "Filter Cafe and Kitchen",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "THU",
+   "billing_date": "2026-05-09",
+   "delivered_on": "2026-05-10",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911084",
+   "order_date": "2026-05-11",
+   "ledger_name": "Art Of Delight",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "8",
+   "route_day": "Daily",
+   "billing_date": "2026-05-11",
+   "delivered_on": "2026-05-12",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911085",
+   "order_date": "2026-05-11",
+   "ledger_name": "Pasta Street",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "8",
+   "route_day": "Daily",
+   "billing_date": "2026-05-11",
+   "delivered_on": "2026-05-12",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911086",
+   "order_date": "2026-05-11",
+   "ledger_name": "Red Apple Kitchen Consultancy Pvt Ltd - UKN Miraya Rose (Toscano Classic Type)",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "NSK",
+   "route_day": "TUE",
+   "billing_date": "2026-05-11",
+   "delivered_on": "2026-05-12",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911087",
+   "order_date": "2026-05-12",
+   "ledger_name": "The Stage Cafe",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 2,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "TUE/THU/SAT",
+   "billing_date": "2026-05-12",
+   "delivered_on": "2026-05-13",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911088",
+   "order_date": "2026-05-12",
+   "ledger_name": "Centre for Cellular and Molecular Platforms (C-Camp)",
+   "blend": "Pure Coffee-Breakfast Blend Beans-500",
+   "qty": 15,
+   "uom": "KG",
+   "route": "4",
+   "route_day": "FRI",
+   "billing_date": "2026-05-12",
+   "delivered_on": "2026-05-13",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911089",
+   "order_date": "2026-05-14",
+   "ledger_name": "Prarthan Paarth",
+   "blend": "Coffee-Brownie Special-200",
+   "qty": 2,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-05-14",
+   "delivered_on": "2026-05-15",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911090",
+   "order_date": "2026-05-15",
+   "ledger_name": "1 Percent Circle Private Limited",
+   "blend": "Pure Coffee-Excelcia Beans-500",
+   "qty": 6,
+   "uom": "KG",
+   "route": "7",
+   "route_day": "WED",
+   "billing_date": "2026-05-15",
+   "delivered_on": "2026-05-16",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911091",
+   "order_date": "2026-05-15",
+   "ledger_name": "Tanuja R(Ainor Tindi Mane)",
+   "blend": "Coffee-Brownie Special-200",
+   "qty": 21,
+   "uom": "KG",
+   "route": "Parcel",
+   "route_day": "Daily",
+   "billing_date": "2026-05-15",
+   "delivered_on": "2026-05-16",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  },
+  {
+   "order_id": "ORD260911092",
+   "order_date": "2026-05-16",
+   "ledger_name": "Raimukk Marketing LLP",
+   "blend": "Pure Coffee-Original Blend Beans-500",
+   "qty": 5,
+   "uom": "KG",
+   "route": "2",
+   "route_day": "MON/FRI",
+   "billing_date": "2026-05-16",
+   "delivered_on": "2026-05-17",
+   "remarks": null,
+   "delivery_status": "Delivered"
+  }
+ ],
+ "holidays": [
+  {
+   "date": "2026-01-26",
+   "name": "Republic Day",
+   "type": "National"
+  },
+  {
+   "date": "2026-04-03",
+   "name": "Holi",
+   "type": "National"
+  },
+  {
+   "date": "2026-03-21",
+   "name": "Id-ul-Fitr",
+   "type": "National"
+  },
+  {
+   "date": "2026-03-04",
+   "name": "Good Friday",
+   "type": "National"
+  },
+  {
+   "date": "2026-05-01",
+   "name": "Buddha Purnima",
+   "type": "National"
+  },
+  {
+   "date": "2026-06-26",
+   "name": "Muharram",
+   "type": "National"
+  },
+  {
+   "date": "2026-08-15",
+   "name": "Independence Day",
+   "type": "National"
+  },
+  {
+   "date": "2026-08-21",
+   "name": "Varamahalakshmi",
+   "type": "State"
+  },
+  {
+   "date": "2026-10-02",
+   "name": "Gandhi Jayanti",
+   "type": "National"
+  },
+  {
+   "date": "2026-10-20",
+   "name": "Dussehra",
+   "type": "National"
+  },
+  {
+   "date": "2026-11-08",
+   "name": "Diwali (Deepavali)",
+   "type": "National"
+  },
+  {
+   "date": "2026-12-25",
+   "name": "Christmas Day",
+   "type": "National"
+  }
+ ]
+}
